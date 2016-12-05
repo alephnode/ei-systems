@@ -1,0 +1,123 @@
+/* =+=+=+=+=+=+=+=+=+ */
+/* EI SYSTEMS STYLING */
+/* DECEMBER 2016      */
+/* =+=+=+=+=+=+=+=+=+ */
+
+/* APP CONTAINER STYLING */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif
+}
+
+#appContainer {
+  width: 100%;
+}
+
+/* HOME PAGE STYLING */
+
+#homeContainer {
+  width: 100%;
+}
+
+#homeLogoContainer {
+  width: 100%;
+  background: #666;
+  height: 100vh
+}
+
+#homeLogoContainer img {
+  padding-top: 18%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  width: 450px;
+  height: auto
+}
+
+/* PAGE STYLING  - CONTAINERS */
+
+#homeWorkContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workLiveContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer, #teamLocationContainer {
+  display: block;
+  width: 100%;
+  height: 600px;
+  padding-top: 200px
+}
+
+#contactFormContainer {
+  display: block;
+  width: 100%;
+  height: 900px;
+  padding-top: 200px
+}
+
+#homeWorkContainer, #workLayoutContainer, #teamInfoContainer {
+  background: #eee
+}
+
+#homeAboutContainer, #workTestimonialContainer, #teamLocationContainer {
+  background: orange;
+  color: white
+}
+
+#homeContactContainer {
+  background: #aaa;
+  color: white
+}
+
+.homeWorkContent, .homeAboutContent, .homeContactContent,
+.workSpotlightContent, .workLayoutContent, .workLiveContent,
+.workTestimonialContent, .teamShowcaseContent, .teamInfoContent,
+.teamListContent, .teamLocationContent, .contactFormContent {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center
+}
+
+/* HEADER COMPONENT STYLING */
+
+#siteLogo {
+  color: orange
+}
+
+#headerNavLinks, #headerNavLinks a {
+  color: white
+}
+
+#mainNav {
+  background: none;
+  border: none;
+  display: none;
+}
+
+#displayNav {
+  background: #666;
+  border: none;
+  display: block;
+  transition: 1s ease
+}
+
+.navbar-right {
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 16px;
+  line-height: 18px
+}
+
+/* FOOTER COMPONENT STYLING */
+
+#footerContainer {
+  background: #111;
+  height: 150px;
+  padding-top: 40px
+}
+
+#footerContainer a {
+  color: white
+}
+
+.nav-center {
+  display: inline-block;
+  float: none;
+  padding-left: 200px
+}
