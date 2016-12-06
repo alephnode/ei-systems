@@ -107,7 +107,7 @@ body {
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #111;
+  background: blue;
   height: 150px;
   padding-top: 40px
 }
