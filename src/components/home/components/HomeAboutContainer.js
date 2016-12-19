@@ -4,8 +4,20 @@ import { Link } from 'react-router'
 const HomeAboutContainer = () =>
   <div id="homeAboutContainer">
     <div className="homeAboutContent">
-      <h1>Our Team</h1>
-      <Link className="btn btn-primary btn-lg" to="/our-team" activeClassName="active">Meet the team</Link>
+      <div className="row">
+        <div className="container">
+        <div className="col-md-6 teamBlurb">
+          <h2>Custom projects require exceptional individuals.</h2>
+          <p>
+            Our team of seasoned technicians and reliable contractors are focused on turning upscale dreams into reality. From custom interface specialists to full-room automation experts, meet the A-team ready to deliver the setup you request.
+          </p>
+          <Link className="btn btn-lg" id="homeTeamButton" to="/our-team" activeClassName="active">Meet our team</Link>
+        </div>
+        <div className="col-md-6">
+          <img className="img-responsive" src={require('../../../images/ei_fam.jpg')}/>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 

@@ -22,7 +22,7 @@ body {
 
 #homeLogoContainer {
   width: 100%;
-  background: #666;
+  background: #393d40;
   height: 100vh
 }
 
@@ -37,11 +37,19 @@ body {
 
 /* PAGE STYLING  - CONTAINERS */
 
-#homeWorkContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workLiveContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer, #teamLocationContainer {
+#homeWorkContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer, #teamLocationContainer {
   display: block;
   width: 100%;
   height: 600px;
   padding-top: 100px
+}
+
+#homeAboutContainer {
+  background: #06425C;
+}
+
+#workLiveContainer {
+  height: auto;
 }
 
 #contactFormContainer {
@@ -52,10 +60,10 @@ body {
 }
 
 #homeWorkContainer, #workLayoutContainer, #teamInfoContainer {
-  background: #eee
+  background: #f6f8f8
 }
 
-#homeAboutContainer, #workTestimonialContainer, #teamLocationContainer {
+#workTestimonialContainer, #teamLocationContainer {
   background: orange;
   color: white
 }
@@ -82,11 +90,16 @@ body {
 /* HEADER COMPONENT STYLING */
 
 #siteLogo {
-  color: orange
+  color: orange;
+  line-height: 37px
 }
 
 #headerNavLinks, #headerNavLinks a {
-  color: white
+  color: white;
+  height: 75px;
+  padding: 15px 15px;
+  font-size: 16px;
+  line-height: 37px
 }
 
 #mainNav {
@@ -96,25 +109,29 @@ body {
 }
 
 #displayNav {
-  background: #666;
+  background: #393d40;
   border: none;
   display: block;
   transition: 1s ease
 }
 
 .navbar-right {
-  height: 50px;
-  padding: 15px 15px;
   font-size: 16px;
-  line-height: 18px
+  line-height: 50px;
+  padding: 0px 45px;
 }
 
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #111;
-  height: 150px;
-  padding-top: 40px
+  background: #393d40;
+  height: 70px;
+  padding-top: 10px;
+  color: #ddd;
+}
+
+#footerContainer p {
+  font-size: 13px
 }
 
 #footerContainer a {
@@ -132,6 +149,67 @@ body {
   100% {opacity: 0; visibility: hidden}
 }
 
-.ei_logo {
+/*.ei_logo {
   animation: fadeOut 0.5s 2s forwards;
+}*/
+
+#fadeInComponent {
+  color: red;
+  border: 20px solid green;
+}
+
+.workBlurb {
+color: #393d40;
+}
+
+.teamBlurb {
+  color: white
+}
+
+.workBlurb, .teamBlurb {
+  text-align: left;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-feature-settings: "kern";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  min-height: 100%;
+  position: relative;
+}
+
+.workBlurb h2 {
+  color: #575a5b;
+  margin-left: 20px;
+}
+
+.teamBlurb h2 {
+  color: #eee
+}
+
+.workBlurb h2, .teamBlurb h2 {
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 0.3125em;
+  margin-top: 0;
+}
+
+.workBlurb p {
+  margin-left: 20px;
+}
+
+#instaTitle {
+  text-align: center
+}
+
+.homeWorkButton {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: #79CDCD
+}
+
+#homeTeamButton {
+  margin-top: 10px;
+  color: orange;
+  padding-left: 0px;
+  margin-left: 0px
 }
