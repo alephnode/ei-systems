@@ -25,7 +25,7 @@ class HomeWorkContainer extends React.Component {
           <div className="row">
             <div className="container" id={componentState}>
             <div className="col-md-6">
-              <img className="img-responsive" src={require('../../../images/lifestyle-project-sample-006.jpeg')}/>
+              <img className="img-responsive" role="presentation" src={require('../../../images/lifestyle-project-sample-006.jpeg')}/>
             </div>
             <div className="col-md-6 workBlurb">
               <h2>Our work speaks for itself.</h2>

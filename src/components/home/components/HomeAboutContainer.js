@@ -14,7 +14,7 @@ const HomeAboutContainer = () =>
           <Link className="btn btn-lg" id="homeTeamButton" to="/our-team" activeClassName="active">Meet our team</Link>
         </div>
         <div className="col-md-6">
-          <img className="img-responsive" src={require('../../../images/ei_fam.jpg')}/>
+          <img className="img-responsive" role="presentation" src={require('../../../images/ei_fam.jpg')}/>
         </div>
       </div>
     </div>
