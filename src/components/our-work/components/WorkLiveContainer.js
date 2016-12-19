@@ -5,7 +5,7 @@ class WorkLiveContainer extends React.Component {
   componentWillMount() {
     const script = document.createElement("script");
 
-    script.src = "http://www.powr.io/powr.js";
+    script.src = "//www.powr.io/powr.js";
     script.async = true;
     document.body.appendChild(script);
 }
