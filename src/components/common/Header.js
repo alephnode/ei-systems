@@ -33,7 +33,7 @@ class Header extends React.Component {
     <nav className="navbar navbar-default navbar-fixed-top" id={navState}>
       <div className="container-fluid">
         <div className="navbar-header">
-          <a className="navbar-brand " id="siteLogo" href="/">EI Systems Logo</a>
+          <a className="navbar-brand " id="siteLogo" href="/"><img role="presentation" src={require('../../images/ei_logo_horizontal.png')} /></a>
         </div>
         <div className="nav navbar-nav navbar-right" id="headerNavLinks">
           <Link to="/our-work" activeClassName="active">Work</Link>
