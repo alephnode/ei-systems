@@ -37,7 +37,7 @@ class HomeWorkContainer extends React.Component {
               <Link className="btn btn-lg homeWorkButton" to="/our-work" activeClassName="active">Explore our work</Link>
             </div>
             </div>
-            <Waypoint onEnter={this._handleWaypointEnter} />
+            <Waypoint onEnter={this._handleWaypointEnter} scrollableAncestor={window} />
         </div>
       </div>
       </div>
