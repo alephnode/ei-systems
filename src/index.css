@@ -241,3 +241,13 @@ color: #393d40;
   padding-left: 0px;
   margin-left: 0px
 }
+
+.container .contactFormInput {
+  height: 60px
+}
+
+.container label {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 10px
+}

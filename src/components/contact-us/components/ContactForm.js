@@ -34,7 +34,7 @@ class ContactForm extends React.Component {
         <label className="pull-left">
           First Name:
         </label>
-          <input type="text" ref="firstName" className="form-control" defaultValue={this.props.firstName} onChange={this.handleChange} />
+          <input type="text" ref="firstName" className="form-control contactFormInput" defaultValue={this.props.firstName} onChange={this.handleChange} />
         </div>
         </div>
         </div>
@@ -44,7 +44,7 @@ class ContactForm extends React.Component {
         <label className="pull-left">
           Last Name:
         </label>
-          <input type="text" ref="lastName" className="form-control" defaultValue={this.props.lastName} onChange={this.handleChange} />
+          <input type="text" ref="lastName" className="form-control contactFormInput" defaultValue={this.props.lastName} onChange={this.handleChange} />
         </div>
         </div>
         </div>
@@ -54,7 +54,7 @@ class ContactForm extends React.Component {
         <label className="pull-left">
           Email:
         </label>
-          <input type="email" ref="email" className="form-control" defaultValue={this.props.email} onChange={this.handleChange} />
+          <input type="email" ref="email" className="form-control contactFormInput" defaultValue={this.props.email} onChange={this.handleChange} />
         </div>
         </div>
         </div>
@@ -64,12 +64,12 @@ class ContactForm extends React.Component {
         <label className="pull-left">
           Message:
         </label>
-          <textarea type="text" ref="message" className="form-control" defaultValue={this.props.message} onChange={this.handleChange}></textarea>
+          <textarea type="text" ref="message" className="form-control contactFormInput" defaultValue={this.props.message} onChange={this.handleChange}></textarea>
         </div>
         </div>
         </div>
         <br/>
-        <button type="submit" className="btn btn-primary pull-right" value="Submit">Submit</button>
+        <button type="submit" className="btn btn-lg btn-primary pull-right" value="Submit">Submit</button>
       </form>
       </div>
     );

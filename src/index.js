@@ -6,6 +6,6 @@ import './index.css'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-  <Router history={browserHistory} routes={routes} / >,
+  <Router  onUpdate={() => window.scrollTo(0, 0)} history={browserHistory} routes={routes} / >,
   document.getElementById('root')
 );
