@@ -40,6 +40,8 @@ class Header extends React.Component {
           {" | "}
           <Link to="/our-team" activeClassName="active">Team</Link>
           {" | "}
+          <Link to="/our-partners" activeClassName="active">Partners</Link>
+          {" | "}
           <Link to="/contact-us" activeClassName="active">Contact</Link>
         </div>
       </div>

@@ -37,7 +37,7 @@ body {
 
 /* PAGE STYLING  - CONTAINERS */
 
-#homeWorkContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer, #teamLocationContainer {
+#homeWorkContainer,#homePartnersContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer, #teamLocationContainer {
   display: block;
   width: 100%;
   height: 600px;
@@ -100,7 +100,7 @@ body {
 .homeWorkContent, .homeAboutContent, .homeContactContent,
 .workSpotlightContent, .workLayoutContent, .workLiveContent,
 .workTestimonialContent, .teamShowcaseContent, .teamInfoContent,
-.teamListContent, .teamLocationContent, .contactFormContent {
+.teamListContent, .teamLocationContent, .contactFormContent, .homePartnersContent {
   width: 100%;
   margin: 0 auto;
   text-align: center

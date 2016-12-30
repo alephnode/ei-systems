@@ -26,11 +26,12 @@ class ContactForm extends React.Component {
 
   render() {
     return (
+      <div className="container">
       <form onSubmit={this.handleSubmit}>
         <div className="row">
-        <div className="col-md-6 col-md-offset-3">
+        <div className="col-md-6 col-md-offset-6">
         <div className="form-group">
-        <label>
+        <label className="pull-left">
           First Name:
         </label>
           <input type="text" ref="firstName" className="form-control" defaultValue={this.props.firstName} onChange={this.handleChange} />
@@ -38,9 +39,9 @@ class ContactForm extends React.Component {
         </div>
         </div>
         <div className="row">
-        <div className="col-md-6 col-md-offset-3">
+        <div className="col-md-6 col-md-offset-6">
         <div className="form-group">
-        <label>
+        <label className="pull-left">
           Last Name:
         </label>
           <input type="text" ref="lastName" className="form-control" defaultValue={this.props.lastName} onChange={this.handleChange} />
@@ -48,9 +49,9 @@ class ContactForm extends React.Component {
         </div>
         </div>
         <div className="row">
-        <div className="col-md-6 col-md-offset-3">
+        <div className="col-md-6 col-md-offset-6">
         <div className="form-group">
-        <label>
+        <label className="pull-left">
           Email:
         </label>
           <input type="email" ref="email" className="form-control" defaultValue={this.props.email} onChange={this.handleChange} />
@@ -58,17 +59,19 @@ class ContactForm extends React.Component {
         </div>
         </div>
         <div className="row">
-        <div className="col-md-6 col-md-offset-3">
+        <div className="col-md-6 col-md-offset-6">
         <div className="form-group">
-        <label>
+        <label className="pull-left">
           Message:
         </label>
           <textarea type="text" ref="message" className="form-control" defaultValue={this.props.message} onChange={this.handleChange}></textarea>
         </div>
         </div>
         </div>
-        <button type="submit" className="btn btn-primary" value="Submit">Submit</button>
+        <br/>
+        <button type="submit" className="btn btn-primary pull-right" value="Submit">Submit</button>
       </form>
+      </div>
     );
   }
 }

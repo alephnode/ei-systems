@@ -4,6 +4,7 @@ import App from './components/App'
 import HomePage from './components/home/HomePage'
 import OurTeamPage from './components/our-team/OurTeamPage'
 import OurWorkPage from './components/our-work/OurWorkPage'
+import OurPartnersPage from './components/our-partners/OurPartnersPage'
 import ContactUsPage from './components/contact-us/ContactUsPage'
 
 export default (
@@ -11,6 +12,7 @@ export default (
     <IndexRoute component={HomePage} />
     <Route path="our-work" component={OurWorkPage} />
     <Route path="our-team" component={OurTeamPage} />
+    <Route path="our-partners" component={OurPartnersPage} />
     <Route path="contact-us" component={ContactUsPage} />
   </Route>
 );

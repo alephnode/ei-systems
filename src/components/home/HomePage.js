@@ -2,6 +2,7 @@ import React from 'react'
 import HomeLogoContainer from './components/HomeLogoContainer'
 import HomeWorkContainer from './components/HomeWorkContainer'
 import HomeAboutContainer from './components/HomeAboutContainer'
+import HomePartnersContainer from './components/HomePartnersContainer'
 import HomeContactContainer from './components/HomeContactContainer'
 
 class HomePage extends React.Component {
@@ -12,6 +13,7 @@ class HomePage extends React.Component {
     <HomeLogoContainer />
     <HomeWorkContainer />
     <HomeAboutContainer />
+    <HomePartnersContainer />
     <HomeContactContainer />
   </div>
 );
