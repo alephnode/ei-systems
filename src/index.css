@@ -5,6 +5,7 @@
 
 /* APP CONTAINER STYLING */
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-family: sans-serif
@@ -249,4 +250,8 @@ color: #393d40;
   font-weight: 400;
   font-size: 18px;
   margin-top: 10px
+}
+
+.companyInfo h4 {
+  margin-top: 50px;
 }
