@@ -1,5 +1,10 @@
 import React from 'react'
 
+const styles = {
+  border: 0,
+  margin: "40px auto"
+}
+
 class ContactForm extends React.Component {
   constructor(props) {
     super(props);
@@ -71,6 +76,14 @@ class ContactForm extends React.Component {
         <br/>
         <button type="submit" className="btn btn-lg btn-primary pull-right" value="Submit">Submit</button>
       </form>
+      <div className="col-md-12">
+        <iframe
+          width="100%"
+          height="350"
+          frameborder="0" style={{...styles}}
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPkJehHyxkKlfSQVB5oXw2btwvLrt-S9w&q=6340+South+Sandhill+Road+Suite+5,Las+Vegas+NV" allowfullscreen>
+          </iframe>
+        </div>
       </div>
     );
   }
