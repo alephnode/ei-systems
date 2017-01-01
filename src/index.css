@@ -38,7 +38,7 @@ body {
 
 /* PAGE STYLING  - CONTAINERS */
 
-#homeWorkContainer,#homePartnersContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer, #teamLocationContainer {
+#homeWorkContainer,#homePartnersContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer {
   display: block;
   width: 100%;
   height: 600px;
@@ -63,7 +63,11 @@ body {
   background: #f6f8f8
 }
 
-#workTestimonialContainer, #teamLocationContainer {
+#homeWorkContainer {
+  height: 500px
+}
+
+#workTestimonialContainer {
   background: orange;
   color: white
 }
@@ -100,7 +104,7 @@ body {
 .homeWorkContent, .homeAboutContent, .homeContactContent,
 .workSpotlightContent, .workLayoutContent, .workLiveContent,
 .workTestimonialContent, .teamShowcaseContent, .teamInfoContent,
-.teamListContent, .teamLocationContent, .contactFormContent, .homePartnersContent {
+.teamListContent, .contactFormContent, .homePartnersContent {
   width: 100%;
   margin: 0 auto;
   text-align: center
@@ -112,16 +116,16 @@ body {
   color: orange;
   line-height: 37px;
   padding: 0px;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-left: 15px;
 }
 
 #siteLogo img {
-  width: 350px
+  width: 320px
 }
 
 #headerNavLinks, #headerNavLinks a {
-  color: darkblue;
+  color: #4953d1;
   height: 90px;
   padding: 15px 15px;
   font-size: 16px;
@@ -135,8 +139,9 @@ body {
 }
 
 #displayNav {
-  background: white;
-  border: none;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.99);
+  border-bottom: 1px solid #e5e5e5;
   display: block;
   transition: 1s ease
 }
@@ -150,7 +155,7 @@ body {
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #393d40;
+  background: #4953d1;
   height: 70px;
   padding-top: 10px;
   color: #ddd;
@@ -254,4 +259,18 @@ color: #393d40;
 
 .companyInfo h4 {
   margin-top: 50px;
+}
+
+#contactButton {
+  background: #FFA500;
+  border: 1px solid #FFA500;
+  border-radius: 3px;
+  color: white;
+  width: 100px;
+  transition: all 0.25s;
+}
+
+#contactButton:hover {
+  background: #F79514;
+  border: 1px solid #F79514
 }

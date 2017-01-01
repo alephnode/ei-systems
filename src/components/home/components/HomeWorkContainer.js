@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import Waypoint from 'react-waypoint'
 
 const styles = {
-  transition: 'all 0.5s'
+  transition: 'all 0.75s'
 }
 
 class HomeWorkContainer extends React.Component {

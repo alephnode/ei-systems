@@ -2,7 +2,7 @@ import React from 'react'
 
 const contactMapStyles = {
   border: 0,
-  margin: "10px auto 40px auto",
+  margin: "10px auto 40px auto"
 }
 
 const ContactFormMap  = () =>

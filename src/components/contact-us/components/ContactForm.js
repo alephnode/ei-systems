@@ -68,7 +68,7 @@ class ContactForm extends React.Component {
           <textarea type="text" ref="message" className="form-control contactFormInput" defaultValue={this.props.message} onChange={this.handleChange}></textarea>
         </div>
         <br/>
-        <button type="submit" className="btn btn-lg btn-primary pull-right" value="Submit">Submit</button>
+        <button type="submit" className="btn btn-lg pull-right" id="contactButton" value="Submit">Send</button>
       </form>
       </div>
       <ContactFormMap />
