@@ -46,7 +46,7 @@ body {
 }
 
 #homeAboutContainer {
-  background: #06425C;
+  background: #183EB2;
 }
 
 #workLiveContainer {
@@ -73,7 +73,7 @@ body {
 }
 
 #homeWorkContainer {
-  background: url('./images/lifestyle-project-sample-006.jpeg');
+  background: url('./images/lifestyle-project-work.jpeg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,9 +84,8 @@ body {
 
 #homeContactContainer {
   color: white;
-  opacity: 0.5;
   height: 700px;
-  background: url('./images/lv_night.jpeg');
+  background: url('./images/lv_night.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,11 +124,16 @@ body {
 }
 
 #headerNavLinks, #headerNavLinks a {
-  color: #2b33a5;
+  color: #183EB2;
   height: 80px;
   padding: 15px 15px;
-  font-size: 16px;
-  line-height: 40px
+  font-size: 18px;
+  line-height: 40px;
+}
+
+#headerNavLinks a:hover {
+text-decoration: none;
+border-bottom: 3px solid #FFB900
 }
 
 #mainNav {
@@ -149,16 +153,16 @@ body {
 .navbar-right {
   font-size: 16px;
   line-height: 50px;
-  padding: 0px 45px;
+  padding: 0px 45px
 }
 
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #2b33a5;
+  background: #183EB2;
   height: 70px;
   padding-top: 10px;
-  color: #ddd;
+  color: rgba(255,255,255,0.99)
 }
 
 #footerContainer p {
@@ -186,11 +190,11 @@ body {
 
 #fadeInComponent {
   color: red;
-  border: 20px solid green;
+  border: 20px solid green
 }
 
 .workBlurb {
-color: #393d40;
+color: #393d40
 }
 
 .teamBlurb {
@@ -205,16 +209,17 @@ color: #393d40;
   font-weight: 300;
   line-height: 1.6;
   min-height: 100%;
-  position: relative;
+  position: relative
 }
 
 .workBlurb h2 {
   color: #575a5b;
-  margin-left: 20px;
+  margin-left: 20px
 }
 
 .teamBlurb h2 {
-  color: #eee
+  color: #eee;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif
 }
 
 .workBlurb h2, .teamBlurb h2 {
@@ -235,9 +240,19 @@ color: #393d40;
 }
 
 .homeWorkButton {
+  background: #FFB900;
   margin-top: 10px;
-  margin-left: 3px;
-  color: maroon
+  margin-left: 16px;
+  color: white;
+  transition: 0.5s all
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+  color: white!important
+}
+
+.homeWorkButton:hover {
+  background: #FFCE4C;
 }
 
 #homeTeamButton {
@@ -262,8 +277,8 @@ color: #393d40;
 }
 
 #contactButton {
-  background: #FFA500;
-  border: 1px solid #FFA500;
+  background: #FFB900;
+  border: 1px solid #FFB900;
   border-radius: 3px;
   color: white;
   width: 100px;
@@ -271,6 +286,37 @@ color: #393d40;
 }
 
 #contactButton:hover {
-  background: #F79514;
-  border: 1px solid #F79514
+  background: #FFCE4C;
+  border: 1px solid #FFCE4C
+}
+
+#contactHomeButton {
+  background: #183EB2;
+  border: 1px solid #183EB2;
+  transition: 0.25s all
+}
+
+#contactHomeButton:hover {
+  background: #2259FE;
+  border: 1px solid #2259FE
+}
+
+.social-svg-mask {
+  fill: #ddd!important
+}
+
+.social-svg-icon {
+  fill: white!important
+}
+
+.social-icon:hover {
+  border-bottom: none!important;
+}
+
+.social-svg-mask:hover {
+  fill: #666!important
+}
+
+.navSep {
+  margin-right: 15px
 }

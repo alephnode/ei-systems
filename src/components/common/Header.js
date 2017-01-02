@@ -1,5 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router'
+import { SocialIcon } from 'react-social-icons'
+
+const headerStyles = {
+  width: "35px",
+  height: "35px",
+  marginRight: "15px"
+}
 
 class Header extends React.Component {
 
@@ -37,10 +44,11 @@ class Header extends React.Component {
         </div>
         <div className="nav navbar-nav navbar-right" id="headerNavLinks">
           <Link to="/our-work" activeClassName="active">Work</Link>
-          {" | "}
           <Link to="/our-team" activeClassName="active">Team</Link>
-          {" | "}
           <Link to="/contact-us" activeClassName="active">Contact</Link>
+          <span className="navSep">{" | "}</span>
+          <SocialIcon url="https://www.facebook.com/exceptionalintegrationsinc/" style={{...headerStyles}}/>
+          <SocialIcon url="https://www.instagram.com/exceptionalintegrations/" style={{...headerStyles}}/>
         </div>
       </div>
     </nav>
