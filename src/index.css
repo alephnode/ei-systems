@@ -38,6 +38,8 @@ body {
 
 /* PAGE STYLING  - CONTAINERS */
 
+/* TODO: ONCE PROJECT GETS CLOSER, CHANGE THIS HEIGHT DEFINITION */
+
 #homeWorkContainer,#homePartnersContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer {
   display: block;
   width: 100%;
@@ -46,7 +48,10 @@ body {
 }
 
 #homeAboutContainer {
-  background: #183EB2;
+  background: #536EBF;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: auto
 }
 
 #workLiveContainer {
@@ -159,7 +164,7 @@ border-bottom: 3px solid #FFB900
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #183EB2;
+  background: #555;
   height: 70px;
   padding-top: 10px;
   color: rgba(255,255,255,0.99)
@@ -319,4 +324,22 @@ color: #393d40
 
 .navSep {
   margin-right: 15px
+}
+
+.promiseOne, .promiseTwo, .promiseThree, .promiseFour {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 150px;
+  margin: 35px auto;
+}
+
+.promiseOne i, .promiseTwo i, .promiseThree i, .promiseFour i {
+  line-height: 200px;
+  color: #536EBF;
+  font-size: 80px
+}
+.promiseText {
+  color: white;
+  line-height: 1.75em
 }
