@@ -4,7 +4,7 @@ const Footer = () => {
   return (
       <div className="container-fluid" id="footerContainer">
         <div className="nav navbar-nav navbar-right">
-          <p>Copyright &copy; 2016 Exceptional Integrations&reg;. All Rights Reserved.</p>
+          <p>Copyright &copy; 2016 Exceptional Integrations &reg;. All Rights Reserved.</p>
         </div>
       </div>
   );
