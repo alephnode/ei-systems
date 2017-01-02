@@ -121,15 +121,15 @@ body {
 }
 
 #siteLogo img {
-  width: 320px
+  width: 285px
 }
 
 #headerNavLinks, #headerNavLinks a {
-  color: #4953d1;
-  height: 90px;
+  color: #2b33a5;
+  height: 80px;
   padding: 15px 15px;
   font-size: 16px;
-  line-height: 37px
+  line-height: 40px
 }
 
 #mainNav {
@@ -155,7 +155,7 @@ body {
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #4953d1;
+  background: #2b33a5;
   height: 70px;
   padding-top: 10px;
   color: #ddd;
