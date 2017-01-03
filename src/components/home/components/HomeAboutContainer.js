@@ -21,10 +21,10 @@ class HomeAboutContainer extends React.Component {
 
   _handleWaypointEnter() {
     this.setState({
-      transform1: 'slideUp 2s forwards',
-      transform2: 'slideUp 1s 0.25s forwards',
-      transform3: 'slideUp 1s 0.5s forwards',
-      transform4: 'slideUp 1s 1s forwards',
+      transform1: 'slideUp 1s forwards',
+      transform2: 'slideUp 1s 0.2s forwards',
+      transform3: 'slideUp 1s 0.4s forwards',
+      transform4: 'slideUp 1s 0.6s forwards',
     })
   }
 
@@ -36,12 +36,11 @@ class HomeAboutContainer extends React.Component {
           <div className="row">
             <div className="col-md-12 teamBlurb">
             <h2 className="text-center">Our Promise</h2>
-              <p className="text-center">
+              <p className="text-center aboutBlurb">
                 At the core of Exceptional Integrations is a set of values incorporated into every project we take on. From thorough installation plans to detailed walkthroughs and maintenance contracts, we put the customer first.
               </p>
             </div>
           </div>
-          <Waypoint onEnter={this._handleWaypointEnter} scrollableAncestor={window} />
           <div className="row">
           <div className="col-md-3 text-center" style={{...styles, animation: this.state.transform1, opacity: this.state.opacity, visibility: this.state.visiblity}}>
             <div className="promiseOne text-center"><i className="glyphicon glyphicon-fire"></i></div>
@@ -67,6 +66,7 @@ class HomeAboutContainer extends React.Component {
               <h4 className="promiseText text-center">Maintainable</h4>
               <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
           </div>
+          <Waypoint onEnter={this._handleWaypointEnter} scrollableAncestor={window} />
           </div>
           </div>
           </div>
