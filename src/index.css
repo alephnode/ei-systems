@@ -122,6 +122,7 @@ body {
   padding: 0px;
   padding-top: 10px;
   padding-left: 15px;
+  opacity: 0
 }
 
 #siteLogo img {
@@ -144,15 +145,20 @@ border-bottom: 3px solid #FFB900
 #mainNav {
   background: none;
   border: none;
-  display: none
+  visibility: hidden
+}
+
+#mainNav #headerNavLinks a {
+  visibility: visible;
+  color: white
 }
 
 #displayNav {
   box-shadow: 0 2px 2px rgba(0,0,0,0.1);
   background: rgba(255,255,255,0.99);
   border-bottom: 1px solid #e5e5e5;
-  display: block;
-  transition: 1s ease
+  visibility: visible;
+  transition: 0.25s ease
 }
 
 .navbar-right {
@@ -197,6 +203,11 @@ border-bottom: 3px solid #FFB900
 @keyframes slideUp {
   0% {transform: translateY(60px); opacity: 0;}
   100% {transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes slideInRight {
+  0% {transform: translateX(30px); opacity: 0;}
+  100% {transform: translateX(0px); opacity: 1;}
 }
 
 /*.ei_logo {
@@ -322,25 +333,13 @@ color: #393d40
   border: 1px solid #2259FE
 }
 
-.social-svg-mask {
-  fill: #ddd!important
-}
-
-.social-svg-icon {
-  fill: white!important
-}
-
 .social-icon:hover {
   border-bottom: none!important;
 }
 
-.social-svg-mask:hover {
-  fill: #666!important
-}
-
 .navSep {
   margin-right: 15px;
-  color: #ddd
+  color: #393d40
 }
 
 .promiseOne, .promiseTwo, .promiseThree, .promiseFour {
