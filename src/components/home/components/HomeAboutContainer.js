@@ -21,10 +21,10 @@ class HomeAboutContainer extends React.Component {
 
   _handleWaypointEnter() {
     this.setState({
-      transform1: 'slideUp 1s 0.6s forwards',
-      transform2: 'slideUp 1s 0.8s forwards',
-      transform3: 'slideUp 1s 1s forwards',
-      transform4: 'slideUp 1s 1.2s forwards',
+      transform1: 'slideUp 1s 0.5s forwards',
+      transform2: 'slideUp 1s 0.7s forwards',
+      transform3: 'slideUp 1s 0.9s forwards',
+      transform4: 'slideUp 1s 1.1s forwards',
     })
   }
 

@@ -13,7 +13,11 @@ class WorkLiveContainer extends React.Component {
    render() {
      return (
        <div id="workLiveContainer">
+         <div className="container">
          <h1 id="instaTitle">Live Feed</h1>
+         <p className="text-center instaBlurb">See what we're doing in real-time below! If you'd like to see more, follow us on Instagram:
+            @exceptionalintegrations</p>
+        </div>
            <div className="tm-embed-container" id="scriptContainer">
            </div>
            <div className="powr-instagram-feed" id="e30104c8_1482124802886"></div>

@@ -2,10 +2,6 @@ import React from 'react'
 import { Link } from 'react-router'
 import Waypoint from 'react-waypoint'
 
-const styles = {
-  transition: 'all 0.75s'
-}
-
 class HomeWorkContainer extends React.Component {
   constructor(){
     super();
@@ -28,7 +24,7 @@ class HomeWorkContainer extends React.Component {
       <div id="homeWorkContainer">
         <div className="homeWorkContent">
           <div className="row">
-            <div className="container" style={{...styles, opacity: this.state.opacity, visibility: this.state.visiblity}}>
+            <div className="container" style={{opacity: this.state.opacity, visibility: this.state.visiblity, transition: 'all 0.75s'}}>
             <div className="col-md-12 workBlurb">
               <h2>Our Process</h2>
                 <p>

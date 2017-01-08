@@ -36,15 +36,24 @@ body {
   height: auto
 }
 
+
+
 /* PAGE STYLING  - CONTAINERS */
 
 /* TODO: ONCE PROJECT GETS CLOSER, CHANGE THIS HEIGHT DEFINITION */
 
-#homeWorkContainer,#homePartnersContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer {
+#homeWorkContainer,#homeAboutContainer,#homeContactContainer,#workSpotlightContainer,#workLayoutContainer,#workTestimonialContainer, #teamShowcaseContainer, #teamInfoContainer, #teamListContainer {
   display: block;
   width: 100%;
   height: 600px;
   padding-top: 100px
+}
+
+#homePartnersContainer {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 60px
 }
 
 #homeAboutContainer {
@@ -55,6 +64,7 @@ body {
 }
 
 #workLiveContainer {
+  padding: 60px 0px;
   height: auto;
 }
 
@@ -108,10 +118,15 @@ body {
 .homeWorkContent, .homeAboutContent, .homeContactContent,
 .workSpotlightContent, .workLayoutContent, .workLiveContent,
 .workTestimonialContent, .teamShowcaseContent, .teamInfoContent,
-.teamListContent, .contactFormContent, .homePartnersContent {
+.teamListContent, .contactFormContent {
   width: 100%;
   margin: 0 auto;
   text-align: center
+}
+
+.homePartnersContent {
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* HEADER COMPONENT STYLING */
@@ -128,6 +143,45 @@ body {
 #siteLogo img {
   width: 285px
 }
+
+.partnerLogos {
+  margin-bottom: 60px
+}
+
+@media screen and (min-width: 992px) {
+  .partnerLogos {
+    margin-top: -40px
+  }
+
+  .partnersContainer {
+    opacity: 0;
+    margin-top: 80px
+  }
+}
+
+.kaleidescapeLogo, .lutronLogo, .triadLogo, .crestronLogo {
+  width: 25%;
+  display: inline-block!important;
+  margin: 30px 0px
+}
+
+.crestronLogo {
+  width:35%
+}
+
+.triadLogo {
+  margin-left: 70px
+}
+
+.lutronLogo {
+  width:45%;
+  padding-left: 100px
+}
+
+.kaleidescapeLogo {
+  margin-left: 60px
+}
+
 
 #headerNavLinks, #headerNavLinks a {
   color: #183EB2;
@@ -210,6 +264,11 @@ border-bottom: 3px solid #FFB900
   100% {transform: translateX(0px); opacity: 1;}
 }
 
+@keyframes slideInLeft {
+  0% {transform: translateX(0px); opacity: 0;}
+  100% {transform: translateX(30px); opacity: 1;}
+}
+
 /*.ei_logo {
   animation: fadeOut 0.5s 2s forwards;
 }*/
@@ -227,7 +286,7 @@ color: #393d40
   color: white
 }
 
-.workBlurb, .teamBlurb, .contactBlurb {
+.workBlurb, .teamBlurb, .contactBlurb, .instaBlurb {
   text-align: left;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-feature-settings: "kern";
@@ -236,6 +295,15 @@ color: #393d40
   line-height: 1.6;
   min-height: 100%;
   position: relative
+}
+
+.instaBlurb {
+  padding: 20px 0px
+}
+
+.contactBlurb {
+  opacity: 0;
+  visibility: hidden
 }
 
 .workBlurb h2 {
@@ -261,7 +329,7 @@ color: #393d40
   font-size: 20px;
 }
 
-.contactBlurb p, .aboutBlurb, .contactPageBlurb {
+.contactBlurb p, .aboutBlurb, .contactPageBlurb, .partnersBlurb {
   font-size: 20px;
   padding: 15px 0px;
   font-weight: 300
