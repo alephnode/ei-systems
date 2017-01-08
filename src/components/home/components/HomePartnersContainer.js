@@ -46,7 +46,7 @@ class HomePartnersContainer extends React.Component {
         </div>
         </div>
         </div>
-        <Waypoint onEnter={this._handlePartnersWaypointEnter} scrollableAncestor={window} />
+        <Waypoint bottomOffset="-20%" onEnter={this._handlePartnersWaypointEnter} scrollableAncestor={window} />
       </div>
     );
   }

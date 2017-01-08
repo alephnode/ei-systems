@@ -31,7 +31,7 @@ class HomeContactContainer extends React.Component {
           <Link className="btn btn-primary btn-lg" id="contactHomeButton" to="/contact-us" activeClassName="active">Reach out</Link>
         </div>
         </div>
-        <Waypoint onEnter={this._handleContactWaypointEnter} scrollableAncestor={window} />
+        <Waypoint bottomOffset='-20%' onEnter={this._handleContactWaypointEnter} scrollableAncestor={window} />
         </div>
       </div>
     );
