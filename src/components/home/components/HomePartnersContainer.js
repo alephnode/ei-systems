@@ -27,12 +27,16 @@ class HomePartnersContainer extends React.Component {
     return(
       <div id="homePartnersContainer">
         <div className="container">
-        <div className="homePartnersContent">
-        <div className="col-md-4 partnersContainer" style={{animation: this.state.textTransform}}>
-          <h1>Our Partners</h1>
-          <p className="partnersBlurb">With partnerships with the industry's leading companies, your installation will be the highest tier of quality with the most recent trends in technology.</p>
-        </div>
-        <div className="partnerLogos col-md-8" style={{transition: this.state.imgTransition,
+          <div className="homePartnersContent">
+            <div className="partnersContainer" style={{animation: this.state.textTransform}}>
+              <div className="col-md-2">
+                <h2>Our Partners</h2>
+              </div>
+              <div className="col-md-4">
+                <p className="partnersBlurb">With partnerships with top industry leaders, your installation will be the highest tier of quality with the most recent trends in technology.</p>
+              </div>
+            </div>
+        <div className="partnerLogos col-md-6" style={{transition: this.state.imgTransition,
                                                        opacity: this.state.opacity,
                                                        visibility: this.state.visibility}}>
           <div className="row text-center">

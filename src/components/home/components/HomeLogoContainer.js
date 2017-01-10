@@ -4,7 +4,7 @@ class HomeLogoContainer extends React.Component {
   render(){
   return (
   <div id="homeLogoContainer">
-    <img role="presentation" className="ei_logo" src={require('../../../images/flat_ei.png')}/>
+    <img role="presentation" className="ei_logo img-responsive" src={require('../../../images/flat_ei.png')}/>
   </div>);
   }
 }

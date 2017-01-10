@@ -100,12 +100,13 @@ body {
 
 #homeContactContainer {
   color: white;
-  height: 700px;
+  height: 570px;
   background: url('./images/lv_night.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 140px
 }
 
 #homeContactContent {
@@ -156,7 +157,7 @@ body {
 
   .partnersContainer {
     opacity: 0;
-    margin-top: 80px
+    padding-top: 80px
   }
 }
 
@@ -353,7 +354,7 @@ color: #393d40
 .homeWorkButton {
   background: #FFB900;
   margin-top: 20px;
-  margin-left: 16px;
+  margin-left: 25px;
   color: white;
   transition: 0.5s all
 }
@@ -452,9 +453,39 @@ a, a:hover, a:active, a:visited {
     text-decoration:none!important;
 }
 
+.partnersContainer h2 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.homeContactLede h2 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 @media screen and (min-width: 992px) {
   .teamBlurb h2 {
     text-align: right
+  }
+
+  .homePartnersContainer {
+    margin-top: 20px;
+    padding-top: 100px
+  }
+
+  .partnersContainer h2 {
+    text-align: right;
+    margin-top: 0px;
+    line-height: 1.4em
+  }
+
+  .partnersBlurb {
+    border-left: 1px solid #393d40;
+    padding-left: 25px;
+    line-height: 1.75em;
+    padding-top: 0px
+  }
+
+  .partnerLogos {
+    margin-top: -120px
   }
 
   .workBlurb h2 {
@@ -475,5 +506,21 @@ a, a:hover, a:active, a:visited {
     border-left: 0.5px solid #393d40
   }
 
-  
+  .homeContactLede h2 {
+    text-align: right;
+    margin-top: 0px;
+    line-height: 1.4em;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  }
+
+  .contactBlurb p {
+    border-left: 1px solid white;
+    padding-left: 25px;
+    padding-top: 0px
+  }
+
+  #contactHomeButton {
+    margin-left:25px
+  }
+
 }
