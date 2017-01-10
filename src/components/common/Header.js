@@ -53,9 +53,8 @@ class Header extends React.Component {
           <a className="navbar-brand" style={{animation: this.state.logoTransform}} id="siteLogo" href="/"><img role="presentation" src={require('../../images/flat_ei_nav.png')} /></a>
         </div>
         <div className="nav navbar-nav navbar-right" id="headerNavLinks">
-          <Link to="/our-work" activeClassName="active">Work</Link>
-          <Link to="/our-team" activeClassName="active">Team</Link>
-          <Link to="/contact-us" activeClassName="active">Contact</Link>
+          <Link to="/our-work" activeClassName="active" style={{...headerStyles, opacity: this.state.opacity, visibility: this.state.visibility}}>Work</Link>
+          <Link to="/contact-us" activeClassName="active" style={{...headerStyles, opacity: this.state.opacity, visibility: this.state.visibility}}>Contact</Link>
           <span className="navSep" style={{color: this.state.color, opacity: this.state.opacity, transition: this.state.transition}}>{" | "}</span>
           <SocialIcon url="https://www.facebook.com/exceptionalintegrationsinc/" style={{...headerStyles, opacity: this.state.opacity, visibility: this.state.visibility}} color={this.state.color}/>
           <SocialIcon url="https://www.instagram.com/exceptionalintegrations/" style={{...headerStyles, opacity: this.state.opacity, visibility: this.state.visibility}} color={this.state.color}/>

@@ -37,12 +37,16 @@ class HomeAboutContainer extends React.Component {
       <div id="homeAboutContainer">
         <div className="homeAboutContent">
           <div className="container">
-          <div className="row">
-            <div className="col-md-12 teamBlurb">
-            <h2 className="text-center">Our Promise</h2>
-              <p className="text-center aboutBlurb">
+          <div className="row promiseTop">
+            <div className="teamBlurb">
+            <div className="col-md-2 col-md-offset-2">
+            <h2 className="">Our Promise</h2>
+            </div>
+            <div className="col-md-6">
+              <p className="aboutBlurb">
                 At the core of Exceptional Integrations is a set of values incorporated into every project we take on. From thorough installation plans to detailed walkthroughs and maintenance contracts, we put the customer first.
               </p>
+            </div>
             </div>
           </div>
           <div className="row">

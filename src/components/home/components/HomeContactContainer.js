@@ -26,9 +26,9 @@ class HomeContactContainer extends React.Component {
         <div className="homeContactContent">
         <div className="container">
           <div className="col-md-offset-7 col-md-5 contactBlurb" style={{opacity: this.state.opacity, visibility: this.state.visibility, transition: 'all 0.75s'}}>
-          <h1>We're here to help</h1>
+          <h1>Get in touch</h1>
           <p>Our technicians are certified, experienced, and extremely passionate about every project.  We take pride in building life-long relationships with our valued customers. Were ready to go to work for you!</p>
-          <Link className="btn btn-primary btn-lg" id="contactHomeButton" to="/contact-us" activeClassName="active">Reach out</Link>
+          <Link className="btn btn-primary btn-lg" id="contactHomeButton" to="/contact-us" activeClassName="active">Our Details</Link>
         </div>
         </div>
         <Waypoint bottomOffset='-20%' onEnter={this._handleContactWaypointEnter} scrollableAncestor={window} />
