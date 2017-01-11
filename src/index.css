@@ -69,7 +69,7 @@ body {
 }
 
 #workLiveContainer {
-  padding: 100px 0px;
+  padding: 130px 0px;
   height: auto;
 }
 
@@ -290,7 +290,7 @@ color: #393d40
   color: white
 }
 
-.workBlurb, .teamBlurb, .contactBlurb, .instaBlurb, .contactFormMapBlurb {
+.workBlurb, .teamBlurb, .contactBlurb, .instaBlurb, .contactFormMapBlurb, .testimonialBlurb  {
   text-align: left;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-feature-settings: "kern";
@@ -348,7 +348,8 @@ color: #393d40
 }
 
 #instaTitle {
-  text-align: center
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  text-align: right
 }
 
 .homeWorkButton {
@@ -453,13 +454,15 @@ a, a:hover, a:active, a:visited {
     text-decoration:none!important;
 }
 
-.partnersContainer h2 {
+.partnersContainer h2, .homeContactLede h2, .workTestimonialLede  {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-.homeContactLede h2 {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+.instaTitleContainer {
+  margin-bottom: 40px;
 }
+
+
 
 @media screen and (min-width: 992px) {
   .teamBlurb h2 {
@@ -506,7 +509,7 @@ a, a:hover, a:active, a:visited {
     border-left: 0.5px solid #393d40
   }
 
-  .homeContactLede h2 {
+  .homeContactLede h2, .workTestimonialLede {
     text-align: right;
     margin-top: 0px;
     line-height: 1.4em;
@@ -521,6 +524,21 @@ a, a:hover, a:active, a:visited {
 
   #contactHomeButton {
     margin-left:25px
+  }
+
+  #instaTitle {
+    margin-top: 0px
+  }
+
+  .instaBlurb {
+    padding-top: 0px;
+    border-left: 1px solid #393d40;
+    padding-left: 25px
+  }
+
+  .testimonialBlurb {
+    padding: 0px 0px 60px 25px;
+    border-left: 1px solid white
   }
 
 }

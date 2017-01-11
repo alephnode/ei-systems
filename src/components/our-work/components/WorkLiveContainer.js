@@ -13,10 +13,16 @@ class WorkLiveContainer extends React.Component {
    render() {
      return (
        <div id="workLiveContainer">
-         <div className="container">
-         <h1 id="instaTitle">Live Feed</h1>
-         <p className="text-center instaBlurb">See what we're doing in real-time below! If you'd like to see more, follow us on Instagram:
+         <div className="container instaTitleContainer">
+          <div className="row">
+          <div className="col-md-offset-1 col-md-2">
+         <h2 id="instaTitle">Live Feed</h2>
+         </div>
+          <div className="col-md-8">
+         <p className="instaBlurb">See what we're doing in real-time below! If you'd like to see more, follow us on Instagram:
             @exceptionalintegrations</p>
+        </div>
+        </div>
         </div>
            <div className="tm-embed-container" id="scriptContainer">
            </div>
