@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  font-family: sans-serif
+  font-family: 'Muli', sans-serif;
 }
 
 #appContainer {
@@ -115,6 +115,8 @@ body {
 
 #homeContactContainer h1 {
   padding-top: 100px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
 }
 
 .homeWorkContent, .homeAboutContent, .homeContactContent,
@@ -143,7 +145,7 @@ body {
 }
 
 #siteLogo img {
-  width: 285px
+  width: 250px
 }
 
 .partnerLogos {
@@ -189,10 +191,14 @@ body {
 
 #headerNavLinks, #headerNavLinks a {
   color: #183EB2;
-  height: 80px;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 40px
+  height: 70px;
+  padding: 12px;
+  font-size: 17px;
+  line-height: 40px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+
 }
 
 #headerNavLinks a:hover {
@@ -213,7 +219,7 @@ border-bottom: 3px solid #FFB900;
 
 #displayNav {
   box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-  background: rgba(255,255,255,0.93);
+  background: rgba(255,255,255,0.97);
   border-bottom: 1px solid #e5e5e5;
   visibility: visible;
   transition: 0.25s ease
@@ -228,10 +234,10 @@ border-bottom: 3px solid #FFB900;
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #ddd;
+  background: #536EBF;
   height: 70px;
   padding-top: 10px;
-  color: #999
+  color: #efefef
 }
 
 #footerContainer p {
@@ -292,10 +298,10 @@ color: #393d40
 
 .workBlurb, .teamBlurb, .contactBlurb, .instaBlurb, .contactFormMapBlurb, .testimonialBlurb, .testimonial  {
   text-align: left;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
   font-feature-settings: "kern";
   font-size: 18px;
-  font-weight: 300;
   line-height: 1.75;
   min-height: 100%;
   position: relative
@@ -333,11 +339,14 @@ color: #393d40
 .workBlurb h2 {
   color: #575a5b;
   margin-left: 20px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
 }
 
 .teamBlurb h2 {
   color: #eee;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
 }
 
 .workBlurb h2, .teamBlurb h2 {
@@ -345,7 +354,9 @@ color: #393d40
   line-height: 1.4;
   margin-bottom: 0.3125em;
   margin-top: 0;
-  font-size: 32px
+  font-size: 32px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
 }
 
 .workBlurb p {
@@ -356,11 +367,13 @@ color: #393d40
 .contactBlurb p, .aboutBlurb, .contactPageBlurb, .partnersBlurb {
   font-size: 20px;
   padding: 15px 0px;
-  font-weight: 300
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
 }
 
 #instaTitle {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
   text-align: right
 }
 
@@ -450,7 +463,14 @@ color: #393d40
 }
 .promiseText {
   color: white;
-  line-height: 1.75em
+  line-height: 1.75em;
+  font-family: 'Muli', sans-serif;
+  font-weight: 200;
+}
+
+.promiseText:not(p), #footerContainer p{
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
 }
 
 .contactFormMapContent {
@@ -467,18 +487,27 @@ a, a:hover, a:active, a:visited {
 }
 
 .partnersContainer h2, .homeContactLede h2, .workTestimonialLede  {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
 }
 
 .instaTitleContainer {
   margin-bottom: 40px;
 }
 
-
+.overlay {
+	width:100%;
+	min-height:500px;
+	position:absolute;
+	top:0;
+  pointer-events: none
+}
 
 @media screen and (min-width: 992px) {
   .teamBlurb h2 {
-    text-align: right
+    text-align: right;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
   }
 
   .homePartnersContainer {
@@ -505,7 +534,9 @@ a, a:hover, a:active, a:visited {
 
   .workBlurb h2 {
     text-align: right;
-    margin-right:20px
+    margin-right:20px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
   }
   .aboutBlurb {
     border-left: 1px solid white;
@@ -525,7 +556,8 @@ a, a:hover, a:active, a:visited {
     text-align: right;
     margin-top: 0px;
     line-height: 1.4em;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
   }
 
   .contactBlurb p {
