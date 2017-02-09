@@ -377,6 +377,11 @@ color: #393d40
   text-align: right
 }
 
+.contactHeading, .companyInfo, .formWork, .contactFormMapContent h2 {
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+}
+
 .homeWorkButton {
   background: #FFB900;
   margin-top: 20px;
@@ -473,8 +478,9 @@ color: #393d40
   font-weight: 400;
 }
 
-.contactFormMapContent {
-  text-align: left
+.contactFormMapContainer .contactFormMapContent {
+  text-align: left;
+  padding-left: 0px;
 }
 
 .active {

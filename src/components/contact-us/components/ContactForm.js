@@ -30,7 +30,7 @@ class ContactForm extends React.Component {
       <div className="container">
       <div className="row">
       <div className="col-md-5">
-        <h1 className="text-left">Got a question?</h1>
+        <h1 className="text-left contactHeading">Got a question?</h1>
         <p className="text-left contactPageBlurb">Whether you're a new customer interested in our services, or an existing customer seeking support, we would love to hear from you.  Don't hesitate to call or use our contact form to reach us for any reason.  Our talented staff of representatives are knowledgeable, responsive and ready to answer your questions.</p>
         <div className="companyInfo">
           <h4 className="text-left">Exceptional Integrations</h4>
@@ -41,7 +41,7 @@ class ContactForm extends React.Component {
         <p className="text-left"><i className="glyphicon glyphicon-envelope"></i> <a href="mailto:info@exceptionalintegrations.com" target="_top">info@exceptionalintegrations.com</a></p>
         </div>
       </div>
-      <div className="col-md-6 col-md-offset-1">
+      <div className="col-md-6 formWork col-md-offset-1">
       <form onSubmit={this.handleSubmit}>
         <div className="form-group">
         <label className="pull-left">

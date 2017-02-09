@@ -28,10 +28,6 @@ class HomeAboutContainer extends React.Component {
     })
   }
 
-  _handleWaypointLeave() {
-    alert('I left')
-  }
-
   render() {
     return (
       <div id="homeAboutContainer">
