@@ -36,7 +36,7 @@ class HomeAboutContainer extends React.Component {
           <div className="row promiseTop">
             <div className="teamBlurb">
             <div className="col-md-2 col-md-offset-2">
-            <h2 className="">Our Promise</h2>
+            <h2>Our Promise</h2>
             </div>
             <div className="col-md-6">
               <p className="aboutBlurb">

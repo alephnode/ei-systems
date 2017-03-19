@@ -100,7 +100,11 @@ video#bgvid {
 #contactFormContainer {
   display: block;
   width: 100%;
-  padding-top: 150px
+  padding-top: 50px
+}
+
+.contactFormSection {
+  padding-bottom: 60px;
 }
 
 #workLayoutContainer, #teamInfoContainer {
@@ -265,7 +269,7 @@ border-bottom: 3px solid #FFB900;
 
 #displayNav {
   box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-  background: rgba(255,255,255,0.97);
+  background: rgba(255,255,255,0.90);
   border-bottom: 1px solid #e5e5e5;
   visibility: visible;
   transition: 0.25s ease
@@ -280,10 +284,11 @@ border-bottom: 3px solid #FFB900;
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #536EBF;
+  background: #2F333F;
   height: 70px;
   padding-top: 10px;
-  color: #efefef
+  color: #efefef;
+  border-top: 2px solid white;
 }
 
 #footerContainer p {
@@ -395,7 +400,7 @@ color: #393d40
   color: white
 }
 
-.workBlurb, .teamBlurb, .contactBlurb, .instaBlurb, .contactFormMapBlurb, .testimonialBlurb, .testimonial  {
+.workBlurb, .teamBlurb, .contactBlurb, .instaBlurb, .contactFormMapBlurb, .testimonialBlurb, .testimonial, .contactTopBlurb  {
   text-align: left;
   font-family: 'Muli', sans-serif;
   font-weight: 200;
@@ -405,6 +410,16 @@ color: #393d40
   min-height: 100%;
   position: relative
 }
+
+.contactTopBlurb {
+  margin-top: -45px;
+}
+
+.contactMapMain {
+  margin-bottom: -45px;
+}
+
+
 
 .attribution {
   padding-right: 3%;
@@ -448,7 +463,7 @@ color: #393d40
   font-weight: 400;
 }
 
-.workBlurb h2, .teamBlurb h2 {
+.workBlurb h2, .teamBlurb h2, .contactTopBlurb h2 {
   font-weight: 300;
   line-height: 1.4;
   margin-bottom: 0.3125em;
@@ -575,6 +590,7 @@ color: #393d40
 .promiseText:not(p), #footerContainer p{
   font-family: 'Muli', sans-serif;
   font-weight: 400;
+  margin-bottom: 0px!important
 }
 
 .contactFormMapContainer .contactFormMapContent {
@@ -609,15 +625,25 @@ a, a:hover, a:active, a:visited {
 }
 
 @media screen and (min-width: 992px) {
-  .teamBlurb h2 {
+  .teamBlurb h2, .contactTopBlurb h2 {
     text-align: right;
     font-family: 'Muli', sans-serif;
     font-weight: 400;
+    max-width: 150px;
   }
 
   .homePartnersContainer {
     margin-top: 20px;
     padding-top: 100px
+  }
+
+  .contactTopBlurb h2 {
+    border-right: 1px solid #333;
+    padding-right: 20%;
+  }
+
+  .contactTopGraph {
+    margin-left: -25px;
   }
 
   .partnersContainer h2 {

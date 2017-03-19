@@ -27,11 +27,13 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
+      <ContactFormMap />
+      <div className="container contactFormSection">
       <div className="row">
       <div className="col-md-5">
         <h1 className="text-left contactHeading">Got a question?</h1>
-        <p className="text-left contactPageBlurb">Whether you're a new customer interested in our services, or an existing customer seeking support, we would love to hear from you.  Don't hesitate to call or use our contact form to reach us for any reason.  Our talented staff of representatives are knowledgeable, responsive and ready to answer your questions.</p>
+        <p className="text-left contactPageBlurb">Whether you're a new customer interested in our services, or an existing customer seeking support, we would love to hear from you.  Dont hesitate to call or use our contact form to reach us for any reason.  Our talented staff of representatives are knowledgeable, responsive and ready to answer your questions.</p>
         <div className="companyInfo">
           <h4 className="text-left">Exceptional Integrations</h4>
           <p className="text-left">6340 S Sandhill Rd Ste 5</p>
@@ -71,7 +73,7 @@ class ContactForm extends React.Component {
         <button type="submit" className="btn btn-lg pull-right" id="contactButton" value="Submit">Send</button>
       </form>
       </div>
-      <ContactFormMap />
+      </div>
       </div>
       </div>
     );
