@@ -71,7 +71,7 @@ video#bgvid {
 
 #workSpotlightContainer {
   height: 500px;
-  background: url('./images/work-sample.jpeg');
+  background: url('./images/work-sample.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,12 +79,22 @@ video#bgvid {
   position: relative;
 }
 
-#workSpotlightContainer h1 {
+#contactSpotlightContainer {
+  height: 320px;
+  background: url('./images/contact-Background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#workSpotlightContainer h1, #contactSpotlightContainer h1 {
   position: absolute;
   bottom: 0;
   font-size: 8em;
   color: white;
-  text-shadow: 0 1px 3px rgba(0,0,0,.6);
+  text-shadow: 0 2px 4px rgba(0,0,0,.6);
   left: 20px;
   font-family: 'Muli', sans-serif;
 }
@@ -120,7 +130,7 @@ video#bgvid {
 #contactFormContainer {
   display: block;
   width: 100%;
-  padding-top: 50px
+  margin-top: -15px
 }
 
 .contactFormSection {
@@ -224,41 +234,11 @@ video#bgvid {
 }
 
 @media screen and (min-width: 992px) {
-  .partnerLogos {
-    margin-top: -40px
-  }
 
   .partnersContainer {
     opacity: 0;
-    padding-top: 80px
   }
 }
-
-.kaleidescapeLogo, .lutronLogo, .triadLogo, .crestronLogo {
-  width: 25%;
-  display: inline-block!important;
-  margin: 30px 0px
-}
-
-.crestronLogo {
-  width:35%
-}
-
-.triadLogo {
-  margin-left: 70px
-}
-
-.lutronLogo {
-  width:45%;
-  padding-left: 100px;
-  margin-bottom: 35px
-}
-
-.kaleidescapeLogo {
-  vertical-align: bottom;
-  margin-left: 60px
-}
-
 
 #headerNavLinks, #headerNavLinks a {
   color: #183EB2;
@@ -305,7 +285,7 @@ border-bottom: 3px solid #FFB900;
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #6F737F;
+  background: #112C7F;
   height: 70px;
   padding-top: 10px;
   color: #efefef;
@@ -398,14 +378,30 @@ border-bottom: 3px solid #FFB900;
 }
 
 @keyframes slideInLeft {
-  0% {transform: translateX(0px); opacity: 0;}
-  100% {transform: translateX(30px); opacity: 1;}
+  0% {transform: translateX(-60px); opacity: 0;}
+  100% {transform: translateX(-30px); opacity: 1;}
 }
 
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+
+.topLogoRow {
+  padding: 60px 0px 30px 0px;
+  display: flex;
+  align-items: center
+}
+
+.bottomLogoRow {
+  padding: 20px 0px 30px 0px;
+  display: flex;
+  align-items: center
+}
+
+.cediaLogo {
+  width: 60%;
 }
 
 #fadeInComponent {
@@ -439,16 +435,6 @@ color: #393d40
 .contactMapMain {
   margin-bottom: -45px;
   position: relative;
-}
-
-.contactUsLede {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-  text-shadow: 1px 2px 4px rgba(0,0,0,.7);
-  color: white;
-  font-size: 7em;
-  font-family: 'Muli', sans-serif;
 }
 
 
@@ -689,10 +675,6 @@ a, a:hover, a:active, a:visited {
     padding-left: 25px;
     line-height: 1.75em;
     padding-top: 0px
-  }
-
-  .partnerLogos {
-    margin-top: -120px
   }
 
   .workBlurb h2 {
