@@ -1,13 +1,13 @@
 import React from 'react'
 import WorkLiveContainer from './components/WorkLiveContainer'
-import WorkTestimonialContainer from './components/WorkTestimonialContainer'
 import WorkSpotlightContainer from './components/WorkSpotlightContainer'
+import WorkTestimonialCarousel from './components/WorkTestimonialCarousel'
 
 const OurWorkPage = () =>
   <div>
     <WorkSpotlightContainer />
     <WorkLiveContainer />
-    <WorkTestimonialContainer />
+    <WorkTestimonialCarousel />
   </div>
 
 export default OurWorkPage
