@@ -80,7 +80,7 @@ video#bgvid {
 }
 
 #contactSpotlightContainer {
-  height: 320px;
+  height: 350px;
   background: url('./images/contact-Background.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -148,7 +148,7 @@ video#bgvid {
 }
 
 #homeWorkContainer {
-  background: url('./images/lifestyle-project-work.jpeg');
+  background: url('./images/lifestyle-work-project.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,16 +162,33 @@ video#bgvid {
 #homeContactContainer {
   color: white;
   height: 570px;
-  background: url('./images/lv_night.jpg');
+  background: #222;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px
+  padding-top: 0px
+}
+
+#lvGifContainer {
+  padding: 0px;
+}
+
+.lvGifContent {
+  height: 570px;
+  background: url('./images/oie_trans.gif');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
 #homeContactContent {
   opacity: 1;
+}
+
+#contactHomeTextContainer {
+  padding-top: 120px;
+  margin-left: -100px
 }
 
 #homeContactContainer h1 {
@@ -241,13 +258,13 @@ video#bgvid {
 }
 
 #headerNavLinks, #headerNavLinks a {
-  color: #183EB2;
+  color: #333;
   height: 70px;
   padding: 12px;
   font-size: 17px;
   line-height: 40px;
   font-family: 'Muli', sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   text-transform: uppercase;
 
 }
@@ -568,7 +585,11 @@ color: #393d40
 #contactHomeButton {
   background: #183EB2;
   border: 1px solid #183EB2;
-  transition: 0.25s all
+  transition: 0.25s all;
+  display: block;
+  margin-top: 25px;
+  width: 50%;
+  margin-bottom: 0px;
 }
 
 #contactHomeButton:hover {
@@ -711,9 +732,6 @@ a, a:hover, a:active, a:visited {
     padding-top: 0px
   }
 
-  #contactHomeButton {
-    margin-left:25px
-  }
 
   #instaTitle {
     margin-top: 0px
