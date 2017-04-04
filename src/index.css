@@ -111,7 +111,7 @@ video#bgvid {
 }
 
 #homeAboutContainer {
-  background: #536EBF;
+  background: #444;
   padding-top: 60px;
   padding-bottom: 60px;
   height: auto
@@ -583,8 +583,8 @@ color: #393d40
 }
 
 #contactHomeButton {
-  background: #183EB2;
-  border: 1px solid #183EB2;
+  background: #112c7f;
+  border: 1px solid #112c7f;
   transition: 0.25s all;
   display: block;
   margin-top: 25px;
@@ -616,7 +616,7 @@ color: #393d40
 
 .promiseOne i, .promiseTwo i, .promiseThree i, .promiseFour i {
   line-height: 200px;
-  color: #536EBF;
+  color: #444;
   font-size: 80px
 }
 .promiseText {
@@ -711,7 +711,7 @@ a, a:hover, a:active, a:visited {
   }
 
   .promiseTop {
-    margin: 40px 0px
+    margin: 10px 0px
   }
 
   .workBlurbGraph {
