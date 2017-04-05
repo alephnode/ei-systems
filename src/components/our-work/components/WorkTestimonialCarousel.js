@@ -3,11 +3,9 @@ import Slider from 'react-slick'
 
 const settings = {
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 9000,
   infinite: true,
-  speed: 900,
-  slidesToShow: 1,
-  slidesToScroll: 1
+  fade: true
 };
 
 const WorkTestimonialCarousel = () =>

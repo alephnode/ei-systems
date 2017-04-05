@@ -71,7 +71,7 @@ video#bgvid {
 
 #workSpotlightContainer {
   height: 350px;
-  background: url('./images/work-sample.jpg');
+  background: url('./images/work-page.jpg');
   background-attachment: fixed;
   background-position: 0px -200px;
   background-repeat: no-repeat;
@@ -83,7 +83,7 @@ video#bgvid {
   height: 350px;
   background: url('./images/contact-Background.jpg');
   background-attachment: fixed;
-  background-position: center;
+  background-position: 0px -200px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -107,8 +107,8 @@ video#bgvid {
 }
 
 .testimonialCarouselCard {
-  background: white;
-  width: 50%;
+  background: #777;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -129,7 +129,7 @@ video#bgvid {
 }
 
 #workLiveContainer {
-  padding: 60px 0px;
+  padding: 60px 0px 0px 0px;
   height: auto;
 }
 
@@ -140,7 +140,7 @@ video#bgvid {
 }
 
 .contactFormSection {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   margin-top: 90px
 }
 
@@ -167,7 +167,7 @@ video#bgvid {
 
 #homeContactContainer {
   color: white;
-  height: 570px;
+  height: 500px;
   background: #222;
   background-attachment: fixed;
   background-position: center;
@@ -181,11 +181,12 @@ video#bgvid {
 }
 
 .lvGifContent {
-  height: 570px;
+  height: 500px;
   background: url('./images/oie_trans.gif');
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
+  opacity: 0.93
 }
 
 #homeContactContent {
@@ -193,7 +194,7 @@ video#bgvid {
 }
 
 #contactHomeTextContainer {
-  padding-top: 120px;
+  padding-top: 90px;
   margin-left: -100px
 }
 
@@ -215,7 +216,7 @@ video#bgvid {
 /* CAROUSEL STYLING */
 
 #workTestimonialCarouselContainer .workTestimonialPhoto {
-  background: url('./images/work-sample.jpg');
+  background: #777;
   height: 350px;
 }
 
@@ -317,10 +318,10 @@ border-bottom: 3px solid #FFB900;
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #112C7F;
+  background: #ccc;
   height: 70px;
   padding-top: 10px;
-  color: #efefef;
+  color: #555;
   border-top: 2px solid white;
 }
 
@@ -410,8 +411,8 @@ border-bottom: 3px solid #FFB900;
 }
 
 @keyframes slideInLeft {
-  0% {transform: translateX(-60px); opacity: 0;}
-  100% {transform: translateX(-30px); opacity: 1;}
+  0% {transform: translateX(-90px); opacity: 0;}
+  100% {transform: translateX(-60px); opacity: 1;}
 }
 
 .bounce {
@@ -461,11 +462,24 @@ color: #393d40
 }
 
 .testimonial {
+  font-size: 18px;
   padding-top: 20px;
-  background: white;
+  background: #777;
   width: 90%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 60px;
+  color: white
+}
+
+.testimonialLede {
+  margin-top: 50px;
+  font-family: 'Muli', sans-serif;
+  font-size: 28px;
+  text-align: center
+}
+
+#workTestimonialLedeContainer {
+  margin-bottom: 30px
 }
 
 .contactTopBlurb {
@@ -485,7 +499,9 @@ color: #393d40
   font-weight: bold;
   margin: 0 auto;
   width: 90%;
-  padding-bottom: 20px
+  padding-bottom: 20px;
+  color: white;
+  font-size: 20px
 }
 
 .testimonialBlock {
