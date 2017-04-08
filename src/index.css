@@ -113,11 +113,13 @@ video#bgvid {
 }
 
 #homePartnersContainer {
-  background: white
+  background: white;
+  max-height: 800px;
+  overflow-y: hidden
 }
 
 #homeAboutContainer {
-  background: #444;
+  background: #666;
   padding-top: 60px;
   padding-bottom: 60px;
   height: auto
@@ -318,19 +320,31 @@ border-bottom: 3px solid #FFB900;
 /* FOOTER COMPONENT STYLING */
 
 #footerContainer {
-  background: #ccc;
   height: 70px;
   padding-top: 10px;
-  color: #555;
-  border-top: 2px solid white;
+  border-top: 1px solid white;
+}
+
+.homeFooter {
+  background: #222;
+  color: #fff;
+}
+
+.contactFooter, .workFooter {
+  color: black;
+  opacity: 0.6;
+}
+
+.workFooter {
+  background: #eee
+}
+
+.contactFooter {
+  background: white
 }
 
 #footerContainer p {
   font-size: 11px
-}
-
-#footerContainer a {
-  color: white
 }
 
 .nav-center {
@@ -395,6 +409,16 @@ border-bottom: 3px solid #FFB900;
   100% {opacity: 0; visibility: hidden}
 }
 
+@keyframes fadeOutUp {
+  0% {transform: translateY(0px); opacity: 1; visibility: visible}
+  100% {transform: translateY(-20px); opacity: 0; visibility: hidden}
+}
+
+@keyframes moveUp {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-220px);}
+}
+
 @keyframes fadeIn {
   0% {opacity: 0; visibility: hidden}
   100% {opacity: 1; visibility: visible}
@@ -411,8 +435,8 @@ border-bottom: 3px solid #FFB900;
 }
 
 @keyframes slideInLeft {
-  0% {transform: translateX(-90px); opacity: 0;}
-  100% {transform: translateX(-60px); opacity: 1;}
+  0% {transform: translateX(0px); opacity: 0;}
+  100% {transform: translateX(0px); opacity: 1;}
 }
 
 .bounce {
@@ -433,8 +457,16 @@ border-bottom: 3px solid #FFB900;
   align-items: center
 }
 
+.mostBottom {
+  margin-top: 20px
+}
+
 .cediaLogo {
   width: 60%;
+}
+
+.bssLogo {
+  margin-top: -60px
 }
 
 #fadeInComponent {
@@ -572,12 +604,16 @@ color: #393d40
   font-weight: 400;
 }
 
-.homeWorkButton {
+.homeWorkButton, .homePartnersButton {
   background: #FFB900;
   margin-top: 20px;
   margin-left: 25px;
   color: white;
   transition: 0.5s all
+}
+
+.homePartnersButton {
+  margin-left: 45px
 }
 
 .btn.focus, .btn:focus, .btn:hover {
@@ -657,7 +693,7 @@ color: #393d40
 
 .promiseOne i, .promiseTwo i, .promiseThree i, .promiseFour i {
   line-height: 200px;
-  color: #444;
+  color: #666;
   font-size: 80px
 }
 .promiseText {
@@ -733,7 +769,6 @@ a, a:hover, a:active, a:visited {
   }
 
   .partnersBlurb {
-    border-left: 1px solid #393d40;
     padding-left: 25px;
     line-height: 1.75em;
     padding-top: 0px

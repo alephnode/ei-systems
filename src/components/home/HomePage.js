@@ -4,6 +4,7 @@ import HomeWorkContainer from './components/HomeWorkContainer'
 import HomeAboutContainer from './components/HomeAboutContainer'
 import HomePartnersContainer from './components/HomePartnersContainer'
 import HomeContactContainer from './components/HomeContactContainer'
+import HomeFooter from './components/HomeFooter'
 
 class HomePage extends React.Component {
 
@@ -15,6 +16,7 @@ class HomePage extends React.Component {
     <HomeAboutContainer />
     <HomePartnersContainer />
     <HomeContactContainer />
+    <HomeFooter />
   </div>
 );
 }
