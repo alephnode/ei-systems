@@ -23,17 +23,17 @@ class HomeContactContainer extends React.Component {
   render() {
     return(
       <div id="homeContactContainer">
-        <div className="col-md-7" id="lvGifContainer">
+        <div className="col-md-6" id="lvGifContainer">
           <div className="lvGifContent"></div>
         </div>
-        <div className="col-md-5" id="contactHomeTextContainer">
+        <div className="col-md-6" id="contactHomeTextContainer">
         <div className="homeContactContent">
           <div className="contactBlurb" style={{opacity: this.state.opacity, visibility: this.state.visibility, transition: 'all 0.75s'}}>
           <div className="homeContactLede col-md-3">
             <h2>Our<br/>Details</h2>
           </div>
           <div className="col-md-9">
-          <p className="homeContactBlurb">Our technicians are certified, experienced, and extremely passionate about every project.  We take pride in building life-long relationships with our valued customers. Were ready to go to work for you!
+          <p className="homeContactBlurb">Our technicians are certified, experienced, and extremely passionate about every project.  We take pride in building life-long relationships with our valued customers.
           <Link className="btn btn-primary btn-lg" id="contactHomeButton" to="/contact-us" activeClassName="active">Get in Touch</Link>
           </p>
           </div>

@@ -162,11 +162,6 @@ video#bgvid {
 }
 
 #homeWorkContainer {
-  background: url('./images/lifestyle-work-project.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   font-size: 1.5em;
   line-height: 2em;
   border-top: 2px solid white;
@@ -175,7 +170,7 @@ video#bgvid {
 
 #homeContactContainer {
   color: white;
-  height: 500px;
+  height: 460px;
   background: #222;
   background-attachment: fixed;
   background-position: center;
@@ -189,7 +184,7 @@ video#bgvid {
 }
 
 .lvGifContent {
-  height: 500px;
+  height: 460px;
   background: url('./images/oie_trans.gif');
   background-position:center;
   background-repeat:no-repeat;
@@ -202,8 +197,8 @@ video#bgvid {
 }
 
 #contactHomeTextContainer {
-  padding-top: 90px;
-  margin-left: -100px
+  padding-top: 110px;
+  margin-left: -50px
 }
 
 #homeContactContainer h1 {
@@ -833,7 +828,7 @@ a, a:hover, a:active, a:visited {
 
   .contactBlurb p {
     border-left: 1px solid white;
-    padding-left: 25px;
+    padding-left: 35px;
     padding-top: 0px
   }
 

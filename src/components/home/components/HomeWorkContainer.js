@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import Waypoint from 'react-waypoint'
+import { Parallax } from 'react-parallax'
 
 class HomeWorkContainer extends React.Component {
   constructor(){
@@ -21,6 +22,8 @@ class HomeWorkContainer extends React.Component {
 
   render() {
     return (
+      <div>
+      <Parallax className="workContainerImg" bgImage={require('../../../images/lifestyle-work-project.png')} strength={200}>
       <div id="homeWorkContainer">
         <div className="homeWorkContent">
           <div className="row">
@@ -38,6 +41,8 @@ class HomeWorkContainer extends React.Component {
             <Waypoint onEnter={this._handleWaypointEnter} scrollableAncestor={window} />
             </div>
         </div>
+        </div>
+        </Parallax>
       </div>
     );
   }
