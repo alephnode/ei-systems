@@ -29,9 +29,9 @@ class HomePartnersContainer extends React.Component {
 
   _handlePartnersSeeMoreClick() {
     this.setState({
-      textTransform: 'fadeOutLeft 0.25s forwards',
+      textTransform: 'fadeOutLeft 0.1s forwards',
       imgTransform: 'moveLeft 0.75s forwards',
-      moreImgTransform: 'fadeInLeft 0.75s 0.1s forwards'
+      moreImgTransform: 'fadeInLeft 0.75s forwards'
     })
   }
 
