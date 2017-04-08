@@ -69,10 +69,6 @@ video#bgvid {
   padding-top: 100px
 }
 
-.homeContactBlurb {
-  padding-bottom: 0px
-}
-
 #workSpotlightContainer {
   height: 350px;
   background: url('./images/work-page.jpg');
@@ -452,9 +448,9 @@ border-bottom: 3px solid #FFB900;
 }
 
 .bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  -moz-animation: bounce 2s 3s infinite;
+  -webkit-animation: bounce 2s 3s infinite;
+  animation: bounce 2s 3s infinite;
 }
 
 .bottomLogoRow {
@@ -590,6 +586,10 @@ color: #393d40
   padding: 15px 0px;
   font-family: 'Muli', sans-serif;
   font-weight: 200;
+}
+
+.contactBlurb p {
+  padding-bottom: 0px
 }
 
 .contactPageBlurb {
