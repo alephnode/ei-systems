@@ -32,10 +32,10 @@ class ContactForm extends React.Component {
       <div className="container contactFormSection">
       <div className="row">
       <div className="col-md-5">
-        <h1 className="text-left contactHeading">Got a question?</h1>
-        <p className="text-left contactPageBlurb">Whether you're a new customer interested in our services, or an existing customer seeking support, we would love to hear from you.  Dont hesitate to call or use our contact form to reach us for any reason.  Our talented staff of representatives are knowledgeable, responsive and ready to answer your questions.</p>
+        <h2 className="text-left contactHeading">Got a question?</h2>
+        <p className="text-left contactPageBlurb">Whether you're a new customer interested in our services, or an existing customer seeking support, we would love to hear from you. Our talented staff of representatives are knowledgeable, responsive and ready to answer your questions.</p>
         <div className="companyInfo">
-          <h4 className="text-left">Exceptional Integrations</h4>
+          <h3 className="text-left">Exceptional Integrations</h3>
           <p className="text-left">6340 S Sandhill Rd Ste 5</p>
           <p className="text-left">Las Vegas, NV 89120</p>
           <p className="text-left"><i className="glyphicon glyphicon-earphone"></i>  702.749.7700 |

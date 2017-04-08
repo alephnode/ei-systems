@@ -69,6 +69,10 @@ video#bgvid {
   padding-top: 100px
 }
 
+.homeContactBlurb {
+  padding-bottom: 0px
+}
+
 #workSpotlightContainer {
   height: 350px;
   background: url('./images/work-page.jpg');
@@ -115,7 +119,8 @@ video#bgvid {
 #homePartnersContainer {
   background: white;
   max-height: 800px;
-  overflow-y: hidden
+  overflow-y: hidden;
+  padding: 80px 0px;
 }
 
 #homeAboutContainer {
@@ -144,6 +149,11 @@ video#bgvid {
 .contactFormSection {
   padding-bottom: 80px;
   margin-top: 90px
+}
+
+.contactFormSection h2 {
+  margin-top: 10px;
+  font-size: 36px
 }
 
 #workLayoutContainer, #teamInfoContainer {
@@ -264,10 +274,6 @@ video#bgvid {
   width: 250px
 }
 
-.partnerLogos {
-  margin-bottom: 60px
-}
-
 @media screen and (min-width: 992px) {
 
   .partnersContainer {
@@ -299,8 +305,7 @@ border-bottom: 3px solid #FFB900;
 }
 
 #mainNav #headerNavLinks a {
-  visibility: visible;
-  color: white
+  visibility: hidden;
 }
 
 #displayNav {
@@ -409,20 +414,27 @@ border-bottom: 3px solid #FFB900;
   100% {opacity: 0; visibility: hidden}
 }
 
-@keyframes fadeOutUp {
-  0% {transform: translateY(0px); opacity: 1; visibility: visible}
-  100% {transform: translateY(-20px); opacity: 0; visibility: hidden}
+@keyframes fadeOutLeft {
+  0% {transform: translateX(0px); opacity: 1; visibility: visible}
+  100% {transform: translateX(-20px); opacity: 0; visibility: hidden}
 }
 
-@keyframes moveUp {
-  0% {transform: translateY(0px);}
-  100% {transform: translateY(-220px);}
+@keyframes fadeInLeft {
+  0% {transform: translateX(-40px); opacity: 0; visibility: hidden}
+  100% {transform: translateX(0px); opacity: 1; visibility: visible}
+}
+
+@keyframes moveLeft {
+  0% {transform: translateX(0px);}
+  100% {transform: translateX(-60px);}
 }
 
 @keyframes fadeIn {
   0% {opacity: 0; visibility: hidden}
   100% {opacity: 1; visibility: visible}
 }
+
+
 
 @keyframes slideUp {
   0% {transform: translateY(60px); opacity: 0;}
@@ -445,28 +457,15 @@ border-bottom: 3px solid #FFB900;
   animation: bounce 2s infinite;
 }
 
-.topLogoRow {
-  padding: 60px 0px 30px 0px;
-  display: flex;
-  align-items: center
-}
-
 .bottomLogoRow {
-  padding: 20px 0px 30px 0px;
-  display: flex;
-  align-items: center
-}
-
-.mostBottom {
-  margin-top: 20px
+  margin-top: -340px;
+  margin-left: 60px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .cediaLogo {
   width: 60%;
-}
-
-.bssLogo {
-  margin-top: -60px
 }
 
 #fadeInComponent {
@@ -593,6 +592,12 @@ color: #393d40
   font-weight: 200;
 }
 
+.contactPageBlurb {
+  font-size: 19px;
+  letter-spacing: 0.4px;
+  line-height: 1.8em;
+}
+
 #instaTitle {
   font-family: 'Muli', sans-serif;
   font-weight: 400;
@@ -613,7 +618,20 @@ color: #393d40
 }
 
 .homePartnersButton {
-  margin-left: 45px
+  margin-left: 0px;
+  margin-top: 40px
+}
+
+.crestronLogo, .lutronLogo {
+  margin-top: -30px;
+}
+
+.lutronLogo {
+  margin-right: -20px
+}
+
+.kaleidescapeLogo {
+  margin-left: -25px;
 }
 
 .btn.focus, .btn:focus, .btn:hover {
@@ -622,6 +640,10 @@ color: #393d40
 
 .homeWorkButton:hover {
   background: #FFCE4C;
+}
+
+.social-container {
+  border-radius: 100px
 }
 
 #homeTeamButton {
@@ -641,8 +663,9 @@ color: #393d40
   margin-top: 10px
 }
 
-.companyInfo h4 {
-  margin-top: 50px;
+.companyInfo h3 {
+  font-size: 17px;
+  margin-top: 25px;
 }
 
 #contactButton {
@@ -650,13 +673,22 @@ color: #393d40
   border: 1px solid #FFB900;
   border-radius: 3px;
   color: white;
-  width: 100px;
+  width: 120px;
   transition: all 0.25s;
+  font-size: 19px;
+  height: 55px;
+  margin-top: 10px;
 }
 
 #contactButton:hover {
   background: #FFCE4C;
   border: 1px solid #FFCE4C
+}
+
+.imgRow {
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
 }
 
 #contactHomeButton {
@@ -748,11 +780,6 @@ a, a:hover, a:active, a:visited {
     max-width: 150px;
   }
 
-  .homePartnersContainer {
-    margin-top: 20px;
-    padding-top: 100px
-  }
-
   .contactTopBlurb h2 {
     border-right: 1px solid #333;
     padding-right: 20%;
@@ -769,6 +796,8 @@ a, a:hover, a:active, a:visited {
   }
 
   .partnersBlurb {
+    padding-bottom: 0px;
+    border-left: 1px solid #808080;
     padding-left: 25px;
     line-height: 1.75em;
     padding-top: 0px
@@ -824,4 +853,8 @@ a, a:hover, a:active, a:visited {
     border-left: 1px solid white
   }
 
+}
+
+div.partnerLogos.col-xs-12 {
+  max-height: 200px
 }
