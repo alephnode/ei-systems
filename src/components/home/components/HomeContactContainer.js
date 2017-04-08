@@ -23,10 +23,10 @@ class HomeContactContainer extends React.Component {
   render() {
     return(
       <div id="homeContactContainer">
-        <div className="col-md-6" id="lvGifContainer">
+        <div className="col-lg-6 visible-lg visible-xl" id="lvGifContainer">
           <div className="lvGifContent"></div>
         </div>
-        <div className="col-md-6" id="contactHomeTextContainer">
+        <div className="col-lg-6" id="contactHomeTextContainer">
         <div className="homeContactContent">
           <div className="contactBlurb" style={{opacity: this.state.opacity, visibility: this.state.visibility, transition: 'all 0.75s'}}>
           <div className="homeContactLede col-md-3">
