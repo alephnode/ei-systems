@@ -48,22 +48,8 @@ class Header extends React.Component {
     <nav className="navbar navbar-default navbar-fixed-top" id={navState}>
       <div className="container-fluid">
         <div className="navbar-header">
-          <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-          </button>
           <a className="navbar-brand" style={{animation: this.state.logoTransform}} id="siteLogo" href="/"><img role="presentation" src={require('../../images/flat_ei_nav.png')} /></a>
         </div>
-      <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  <div className="nav navbar-nav">
-    <Link to="/our-work" activeClassName="active" style={{...headerStyles,animation: this.state.navTransform}}>Work</Link>
-    <Link to="/contact-us" activeClassName="active" style={{...headerStyles, animaation: this.state.navTransform}}>Contact</Link>
-    <span className="navSep" style={{color: this.state.color, animation: this.state.navTransform}}>{" | "}</span>
-    <SocialIcon url="https://www.facebook.com/exceptionalintegrationsinc/" style={{...headerStyles, animation: this.state.navTransform}} color={this.state.color}/>
-    <SocialIcon url="https://www.instagram.com/exceptionalintegrations/" style={{...headerStyles, animation: this.state.navTransform}} color={this.state.color}/>
-    </div>
         <div className="nav navbar-nav navbar-right" id="headerNavLinks">
           <Link to="/our-work" activeClassName="active" style={{...headerStyles,animation: this.state.navTransform}}>Work</Link>
           <Link to="/contact-us" activeClassName="active" style={{...headerStyles, animaation: this.state.navTransform}}>Contact</Link>
@@ -71,7 +57,6 @@ class Header extends React.Component {
           <SocialIcon url="https://www.facebook.com/exceptionalintegrationsinc/" style={{...headerStyles, animation: this.state.navTransform}} color={this.state.color}/>
           <SocialIcon url="https://www.instagram.com/exceptionalintegrations/" style={{...headerStyles, animation: this.state.navTransform}} color={this.state.color}/>
         </div>
-      </div>
       </div>
     </nav>
   );
