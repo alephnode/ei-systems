@@ -12,9 +12,7 @@ class HomeAboutContainer extends React.Component {
       transform1: '',
       transform2: '',
       transform3: '',
-      transform4: '',
-      opacity: 0,
-      visibility: 'hidden'
+      transform4: ''
     }
     this._handleWaypointEnter = this._handleWaypointEnter.bind(this)
   }
@@ -29,6 +27,9 @@ class HomeAboutContainer extends React.Component {
   }
 
   render() {
+    let width = window.innerWidth
+    if (width < 768) {
+    }
     return (
       <div id="homeAboutContainer">
         <div className="homeAboutContent">
@@ -46,31 +47,35 @@ class HomeAboutContainer extends React.Component {
             </div>
           </div>
           <div className="row">
-          <div className="col-md-3 text-center" style={{...styles, animation: this.state.transform1, opacity: this.state.opacity, visibility: this.state.visiblity}}>
+          <div className="col-md-3 promiseContainer text-center" style={{...styles, animation: this.state.transform1}}>
             <div className="promiseOne text-center"><i className="glyphicon glyphicon-fire"></i></div>
             <div className="clearfix"></div>
             <h4 className="promiseText text-center">Timeliness</h4>
             <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
           </div>
-          <div className="col-md-3 center" style={{...styles, animation: this.state.transform2, opacity: this.state.opacity, visibility: this.state.visiblity}}>
+          <div className="col-md-3 promiseContainer center" style={{...styles, animation: this.state.transform2}}>
             <div className="promiseTwo"><i className="glyphicon glyphicon-hdd"></i></div>
               <div className="clearfix"></div>
               <h4 className="promiseText text-center">Follow-Through</h4>
               <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
           </div>
-          <div className="col-md-3 center" style={{...styles, animation: this.state.transform3, opacity: this.state.opacity, visibility: this.state.visiblity}}>
+          <div className="col-md-3 promiseContainer center" style={{...styles, animation: this.state.transform3}}>
             <div className="promiseThree"><i className="glyphicon glyphicon-briefcase"></i></div>
               <div className="clearfix"></div>
               <h4 className="promiseText text-center">Ease-of-use</h4>
               <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
           </div>
-          <div className="col-md-3 center" style={{...styles, animation: this.state.transform4, opacity: this.state.opacity, visibility: this.state.visiblity}}>
+          <div className="col-md-3 promiseContainer center" style={{...styles, animation: this.state.transform4}}>
             <div className="promiseFour"><i className="glyphicon glyphicon-floppy-disk"></i></div>
               <div className="clearfix"></div>
               <h4 className="promiseText text-center">Maintainable</h4>
               <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
           </div>
-          <Waypoint onEnter={this._handleWaypointEnter} scrollableAncestor={window} />
+          { width > 768  ? (
+            <Waypoint onEnter={this._handleWaypointEnter} scrollableAncestor={window} />
+            ) : (
+              ''
+          )}
           </div>
           </div>
           </div>

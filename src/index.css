@@ -426,8 +426,8 @@ border-bottom: 3px solid #FFB900;
 
 
 @keyframes slideUp {
-  0% {transform: translateY(60px); opacity: 0;}
-  100% {transform: translateY(0px); opacity: 1;}
+  0% {transform: translateY(60px); opacity: 0; visibility: hidden}
+  100% {transform: translateY(0px); opacity: 1; visibility: visible}
 }
 
 @keyframes slideInRight {
@@ -771,6 +771,11 @@ a, a:hover, a:active, a:visited {
     font-family: 'Muli', sans-serif;
     font-weight: 400;
     max-width: 150px;
+  }
+
+  .promiseContainer {
+    visibility: hidden;
+    opacity: 0
   }
 
   .contactTopBlurb h2 {
