@@ -23,24 +23,24 @@ class HomeContactContainer extends React.Component {
   render() {
     return(
       <div id="homeContactContainer">
-        <div className="col-lg-6 visible-lg visible-xl" id="lvGifContainer">
-          <div className="lvGifContent"></div>
-        </div>
-        <div className="col-lg-6" id="contactHomeTextContainer">
-        <div className="homeContactContent">
-          <div className="contactBlurb" style={{opacity: this.state.opacity, visibility: this.state.visibility, transition: 'all 0.75s'}}>
-          <div className="homeContactLede col-md-3">
-            <h2>Our<br/>Details</h2>
+        <div id="homeContactImageContainer"></div>
+          <div className="col-lg-6 visible-lg visible-xl" id="lvGifContainer">
           </div>
-          <div className="col-md-9">
-          <p className="homeContactBlurb">Our technicians are certified, experienced, and extremely passionate about every project.  We take pride in building life-long relationships with our valued customers.
-          <Link className="btn btn-primary btn-lg" id="contactHomeButton" to="/contact-us" activeClassName="active">Get in Touch</Link>
-          </p>
+          <div className="col-lg-6" id="contactHomeTextContainer">
+          <div className="homeContactContent">
+            <div className="contactBlurb" style={{opacity: this.state.opacity, visibility: this.state.visibility, transition: 'all 0.75s'}}>
+            <div className="homeContactLede col-md-3">
+              <h2>Our<br/>Details</h2>
+            </div>
+            <div className="col-md-9">
+            <p className="homeContactBlurb">Our technicians are certified, experienced, and extremely passionate about every project.  We take pride in building life-long relationships with our valued customers.
+            <Link className="btn btn-primary btn-lg" id="contactHomeButton" to="/contact-us" activeClassName="active">Get in Touch</Link>
+            </p>
+            </div>
           </div>
-        </div>
-        <Waypoint bottomOffset='-20%' onEnter={this._handleContactWaypointEnter} scrollableAncestor={window} />
-        </div>
-        </div>
+          <Waypoint bottomOffset='-20%' onEnter={this._handleContactWaypointEnter} scrollableAncestor={window} />
+          </div>
+          </div>
       </div>
     );
   }

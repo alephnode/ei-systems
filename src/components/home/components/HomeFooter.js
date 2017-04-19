@@ -2,9 +2,10 @@ import React from 'react'
 
 const HomeFooter = () => {
   return (
-      <div className="container-fluid" id="footerContainer" className="homeFooter">
-          <p>Copyright &copy; 2017 Exceptional Integrations &reg;. All Rights Reserved.</p>
-      </div>
+    <div className="container-fluid" id="footerContainer" className="homeFooter">
+      <p>LIC: 077000 | BOND: 1,400,000</p>
+      <p>Copyright &copy; 2017 Exceptional Integrations &reg;. All Rights Reserved.</p>
+    </div>
   );
 }
 
