@@ -351,14 +351,14 @@ border-bottom: 3px solid #FFB900;
   background: transparent
 }
 
-.homeFooter p:first-child {
+.homeFooter p:first-child, .contactFooter p:first-child, .workFooter p:first-child {
   display: inline;
   left: 0;
   right: 0;
   float: left;
 }
 
-.homeFooter p:last-child {
+.homeFooter p:last-child, .contactFooter p:last-child, .workFooter p:last-child {
   display: inline;
   right: 0;
 }
@@ -812,7 +812,7 @@ a, a:hover, a:active, a:visited {
     padding-top: 60px
   }
 
-  .homeFooter p:first-child {
+  .homeFooter p:first-child, .workFooter p:first-child, .contactFooter p:first-child {
     display: none;
   }
 }
