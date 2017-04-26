@@ -175,7 +175,7 @@ video#bgvid {
 
 #homeContactContainer {
   color: white;
-  height: 600px;
+  height: 650px;
   background: #444;
   position: relative;
   padding: 0px;
@@ -185,7 +185,7 @@ video#bgvid {
 }
 
 #homeContactImageContainer {
-  height: 600px;
+  height: 650px;
   width: 100%;
   opacity: 0.4;
   position: absolute;
@@ -193,6 +193,7 @@ video#bgvid {
   top: 0;
   background: url('./images/lv_photo.jpeg');
   background-attachment: fixed;
+  background-position: 0 7.1em;
   background-repeat: no-repeat;
   background-size: cover;
 }
