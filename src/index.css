@@ -70,7 +70,7 @@ video#bgvid {
 }
 
 #workSpotlightContainer {
-  height: 350px;
+  height: 550px;
   background: url('./images/work-page.jpg');
   background-attachment: fixed;
   background-position: 0px -200px;
@@ -80,7 +80,7 @@ video#bgvid {
 }
 
 #contactSpotlightContainer {
-  height: 350px;
+  height: 550px;
   background: url('./images/contact-Background.jpg');
   background-attachment: fixed;
   background-position: 0px -200px;
@@ -193,7 +193,6 @@ video#bgvid {
   top: 0;
   background: url('./images/lv_photo.jpeg');
   background-attachment: fixed;
-  background-position: 0px 140px;
   background-repeat: no-repeat;
   background-size: cover;
 }
