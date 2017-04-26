@@ -693,7 +693,7 @@ color: #393d40
 }
 
 .kaleidescapeLogo {
-  margin-left: -25px;
+  width: 165px
 }
 
 .btn {
@@ -755,6 +755,14 @@ color: #393d40
   display: flex;
   align-items: center;
   padding: 30px 0px;
+}
+
+.lastRow {
+  padding-top: 70px
+}
+
+.topLeftRow {
+  padding-top:50px
 }
 
 #contactHomeButton {

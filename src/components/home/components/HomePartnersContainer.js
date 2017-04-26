@@ -78,7 +78,7 @@ class HomePartnersContainer extends React.Component {
           </div>
         </div>
         <div className="partnerLogos bottomLogoRow col-md-5" style={{animation: this.state.moreImgTransform}}>
-          <div className="row imgRow text-center">
+          <div className="row imgRow topLeftRow text-center">
             <div className="col-md-6">
               <img className="img-responsive bss" alt="BSS logo" src={require('../../../images/bss_logo.png')} />
             </div>
@@ -88,14 +88,20 @@ class HomePartnersContainer extends React.Component {
           <div className="col-md-6">
           <img className="img-responsive rtiLogo" alt="RTI logo" src={require('../../../images/rtilogo.png')} />
         </div>
+        <div className="col-md-6">
+        <img className="img-responsive thxLogo" alt="THX logo" src={require('../../../images/thx-Logo.png')} />
+      </div>
           </div>
-          <div className="row imgRow text-center">
+          <div className="row imgRow lastRow text-center">
             <div className="col-md-6">
               <img className="img-responsive cediaLogo" alt="Cedia logo" src={require('../../../images/cedia-Logo.png')} />
             </div>
             <div className="col-md-6">
               <img className="img-responsive levitonLogo" alt="Leviton logo" src={require('../../../images/Leviton-logo.png')} />
           </div>
+          <div className="col-md-6">
+            <img className="img-responsive originLogo" alt="Origin logo" src={require('../../../images/origin-acoustics.png')} />
+        </div>
           </div>
         </div>
         </div>
