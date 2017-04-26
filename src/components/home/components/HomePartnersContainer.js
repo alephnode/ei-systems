@@ -6,6 +6,7 @@ class HomePartnersContainer extends React.Component {
   constructor() {
     super();
     this.state = {
+      animationToggle: 0,
       textTransform: '',
       imgTransform: '',
       moreImgTransform: '',
@@ -28,11 +29,21 @@ class HomePartnersContainer extends React.Component {
   }
 
   _handlePartnersSeeMoreClick() {
+    (this.state.animationToggle % 2 == 0) ?
     this.setState({
-      textTransform: 'fadeOutLeft 0.1s forwards',
-      imgTransform: 'moveLeft 0.75s forwards',
-      moreImgTransform: 'fadeInLeft 0.75s forwards'
-    })
+      animationToggle: this.state.animationToggle+1,
+      textTransform: 'fadeOutThenIn 5s forwards',
+      imgTransform: 'moveLeftThenRight 5s forwards',
+      moreImgTransform: 'fadeInLeftThenOut 5s forwards'
+    }) :
+    this.setState({
+      animationToggle: this.state.animationToggle+1,
+      textTransform: 'fadeOutThenInToggle 5s forwards',
+      imgTransform: 'moveLeftThenRightToggle 5s forwards',
+      moreImgTransform: 'fadeInLeftThenOutToggle 5s forwards'
+    });
+
+    console.log(this.state.animationToggle)
   }
 
   render() {
