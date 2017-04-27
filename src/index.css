@@ -1012,6 +1012,16 @@ a, a:hover, a:active, a:visited {
 }
 
 @media screen and (max-width: 767px) {
+
+  .workBlurb p {
+    font-size: 16px
+  }
+
+  #homeWorkContainer {
+    padding: 50px 0px;
+    background-position: 0px;
+  }
+
   #homeLogoContainer img {
     width: 350px;
   }
