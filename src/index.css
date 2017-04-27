@@ -393,9 +393,10 @@ border-bottom: 3px solid #FFB900;
   color: black;
 }
 
-.workFooter {
+#appContainer .workFooter {
   background: #777;
-  color: white
+  color: white;
+  margin-top: 0px
 }
 
 .contactFooter {
@@ -1013,14 +1014,38 @@ a, a:hover, a:active, a:visited {
 
 @media screen and (max-width: 767px) {
 
-  .workBlurb p {
-    font-size: 16px
-  }
-
   #homeWorkContainer {
     padding: 50px 0px;
     background-position: 0px;
     background-attachment: scroll;
+  }
+
+  #homeContactContainer {
+    background: #333;
+    height: 500px
+  }
+
+  #homeContactImageContainer {
+    background-position: -95px 0px;
+    background-attachment: scroll;
+    opacity: 0.2;
+    height: 500px
+  }
+
+  #instaTitle {
+    text-align: left
+  }
+
+  .socialFeed {
+    width: 95%;
+  }
+
+  .postItem {
+    width: 100%
+  }
+
+  .instaBlurb, .workBlurb p, .partnersBlurb, .aboutBlurb, .contactBlurb p {
+    font-size: 16px;
   }
 
   #workSpotlightContainer, #contactSpotlightContainer {
