@@ -1014,6 +1014,46 @@ a, a:hover, a:active, a:visited {
 
 @media screen and (max-width: 767px) {
 
+  .testimonial {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .testimonialCarouselCard {
+    width: 80%
+  }
+
+  .testimonialLede {
+    margin-top: 30px;
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    text-align: center
+  }
+
+  #workTestimonialLedeContainer {
+    margin-bottom: 30px
+  }
+
+  .attribution {
+    width: 100%;
+    font-size: 16px
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   #homeWorkContainer {
     padding: 50px 0px;
     background-position: 0px;
