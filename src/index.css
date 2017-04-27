@@ -198,17 +198,16 @@ video#bgvid {
 
 #homeContactContainer {
   color: white;
-  height: 650px;
+  height: 620px;
   background: #444;
   position: relative;
   padding: 0px;
   margin: 0 auto;
-  margin-bottom: -70px;
   z-index: 0;
 }
 
 #homeContactImageContainer {
-  height: 650px;
+  height: 620px;
   width: 100%;
   opacity: 0.4;
   position: absolute;
@@ -216,7 +215,7 @@ video#bgvid {
   top: 0;
   background: url('./images/lv_photo.jpeg');
   background-attachment: fixed;
-  background-position: 0 7.1em;
+  background-position: 0 70px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -367,6 +366,7 @@ border-bottom: 3px solid #FFB900;
   text-align: right;
   padding-left:20px;
   padding-right:20px;
+  margin-top: -70px;
   z-index: 999999;
 }
 
