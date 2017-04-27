@@ -47,68 +47,89 @@ class HomePartnersContainer extends React.Component {
   }
 
   render() {
-    return(
-      <div id="homePartnersContainer">
-        <div className="container">
-          <div className="homePartnersContent">
-            <div className="partnersContainer" style={{animation: this.state.textTransform}}>
-              <div className="col-md-2">
-                <h2>Our Partners</h2>
+    let width = window.innerWidth
+    if(width > 768){
+      return(
+        <div id="homePartnersContainer">
+          <div className="container">
+            <div className="homePartnersContent">
+              <div className="partnersContainer" style={{animation: this.state.textTransform}}>
+                <div className="col-md-2">
+                  <h2>Our Partners</h2>
+                </div>
+                <div className="col-md-5">
+                  <p className="partnersBlurb">With partnerships with top industry leaders, your installation will be the highest tier of quality with the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreClick} className="btn btn-lg homePartnersButton">See More</button></p>
+                </div>
+              </div>
+          <div className="partnerLogos col-md-5" style={{animation: this.state.imgTransform}}>
+            <div className="row imgRow text-center">
+              <div className="col-md-5">
+                <img className="img-responsive crestronLogo" alt="crestron logo" src={require('../../../images/crestron-logo-dark.png')} />
               </div>
               <div className="col-md-5">
-                <p className="partnersBlurb">With partnerships with top industry leaders, your installation will be the highest tier of quality with the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreClick} className="btn btn-lg homePartnersButton">See More</button></p>
+              <img className="img-responsive lutronLogo" alt="Lutron logo" src={require('../../../images/lutron_logo.png')} />
+            </div>
+            </div>
+            <div className="row imgRow text-center">
+              <div className="col-md-6">
+                <img className="img-responsive kaleidescapeLogo" alt="Kaleidescape logo" src={require('../../../images/Kaleidescape-Logo.png')} />
+              </div>
+              <div className="col-md-6">
+                <img className="img-responsive bbbLogo" alt="BBB logo" src={require('../../../images/bbb-Logo.png')} />
+            </div>
+            </div>
+          </div>
+          <div className="partnerLogos bottomLogoRow col-md-5" style={{animation: this.state.moreImgTransform}}>
+            <div className="row imgRow topLeftRow text-center">
+              <div className="col-md-6">
+                <img className="img-responsive bss" alt="BSS logo" src={require('../../../images/bss_logo.png')} />
+              </div>
+              <div className="col-md-6">
+              <img className="img-responsive triadLogo" alt="Triad logo" src={require('../../../images/Triad-logo.png')} />
+            </div>
+            <div className="col-md-6">
+            <img className="img-responsive rtiLogo" alt="RTI logo" src={require('../../../images/rtilogo.png')} />
+          </div>
+          <div className="col-md-6">
+          <img className="img-responsive thxLogo" alt="THX logo" src={require('../../../images/thx-Logo.png')} />
+        </div>
+            </div>
+            <div className="row imgRow lastRow text-center">
+              <div className="col-md-6">
+                <img className="img-responsive cediaLogo" alt="Cedia logo" src={require('../../../images/cedia-Logo.png')} />
+              </div>
+              <div className="col-md-6">
+                <img className="img-responsive levitonLogo" alt="Leviton logo" src={require('../../../images/Leviton-logo.png')} />
+            </div>
+            <div className="col-md-6">
+              <img className="img-responsive originLogo" alt="Origin logo" src={require('../../../images/origin-acoustics.png')} />
+          </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <Waypoint bottomOffset="-20%" onEnter={this._handlePartnersWaypointEnter} scrollableAncestor={window} />
+        </div>
+      );
+    }
+    else {
+      return(
+        <div id="homePartnersContainer">
+          <div className="container">
+            <div className="homePartnersMobileContent">
+              <div className="partnersMobileContainer">
+                <div className="col-xs-12">
+                  <h2>Our Partners</h2>
+                </div>
+                <div className="col-xs-10 col-xs-offset-1">
+                  <p className="partnersMobileBlurb">With partnerships with top industry leaders, your installation will be the highest tier of quality with the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreClick} className="btn btn-lg homePartnersButton">See More</button></p>
+                </div>
               </div>
             </div>
-        <div className="partnerLogos col-md-5" style={{animation: this.state.imgTransform}}>
-          <div className="row imgRow text-center">
-            <div className="col-md-5">
-              <img className="img-responsive crestronLogo" alt="crestron logo" src={require('../../../images/crestron-logo-dark.png')} />
-            </div>
-            <div className="col-md-5">
-            <img className="img-responsive lutronLogo" alt="Lutron logo" src={require('../../../images/lutron_logo.png')} />
-          </div>
-          </div>
-          <div className="row imgRow text-center">
-            <div className="col-md-6">
-              <img className="img-responsive kaleidescapeLogo" alt="Kaleidescape logo" src={require('../../../images/Kaleidescape-Logo.png')} />
-            </div>
-            <div className="col-md-6">
-              <img className="img-responsive bbbLogo" alt="BBB logo" src={require('../../../images/bbb-Logo.png')} />
-          </div>
           </div>
         </div>
-        <div className="partnerLogos bottomLogoRow col-md-5" style={{animation: this.state.moreImgTransform}}>
-          <div className="row imgRow topLeftRow text-center">
-            <div className="col-md-6">
-              <img className="img-responsive bss" alt="BSS logo" src={require('../../../images/bss_logo.png')} />
-            </div>
-            <div className="col-md-6">
-            <img className="img-responsive triadLogo" alt="Triad logo" src={require('../../../images/Triad-logo.png')} />
-          </div>
-          <div className="col-md-6">
-          <img className="img-responsive rtiLogo" alt="RTI logo" src={require('../../../images/rtilogo.png')} />
-        </div>
-        <div className="col-md-6">
-        <img className="img-responsive thxLogo" alt="THX logo" src={require('../../../images/thx-Logo.png')} />
-      </div>
-          </div>
-          <div className="row imgRow lastRow text-center">
-            <div className="col-md-6">
-              <img className="img-responsive cediaLogo" alt="Cedia logo" src={require('../../../images/cedia-Logo.png')} />
-            </div>
-            <div className="col-md-6">
-              <img className="img-responsive levitonLogo" alt="Leviton logo" src={require('../../../images/Leviton-logo.png')} />
-          </div>
-          <div className="col-md-6">
-            <img className="img-responsive originLogo" alt="Origin logo" src={require('../../../images/origin-acoustics.png')} />
-        </div>
-          </div>
-        </div>
-        </div>
-        </div>
-        <Waypoint bottomOffset="-20%" onEnter={this._handlePartnersWaypointEnter} scrollableAncestor={window} />
-      </div>
-    );
+      );
+    }
   }
 }
 

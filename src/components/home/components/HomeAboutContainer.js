@@ -28,8 +28,6 @@ class HomeAboutContainer extends React.Component {
 
   render() {
     let width = window.innerWidth
-    if (width < 768) {
-    }
     return (
       <div id="homeAboutContainer">
         <div className="homeAboutContent">
