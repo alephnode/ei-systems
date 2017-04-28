@@ -476,17 +476,17 @@ border-bottom: 3px solid #FFB900;
 }
 
 @keyframes fadeInRightThenOutLeft {
-  0% {transform: translateX(40px); opacity: 1; visibility: hidden}
-  10% {transform: translateX(0px); opacity: 0; visibility: visible}
-  92% {transform: translateX(0px); opacity: 0; visibility: visible}
-  100% {transform: translateX(-40px); opacity: 1; visibility: hidden}
+  0% {transform: translateX(40px); opacity: 0; visibility: hidden}
+  10% {transform: translateX(0px); opacity: 1; visibility: visible}
+  95% {transform: translateX(0px); opacity: 1; visibility: visible}
+  100% {transform: translateX(-40px); opacity: 0; visibility: hidden}
 }
 
 @keyframes fadeInRightThenOutLeftToggle {
-  0% {transform: translateX(40px); opacity: 1; visibility: hidden}
-  10% {transform: translateX(0px); opacity: 0; visibility: visible}
-  92% {transform: translateX(0px); opacity: 0; visibility: visible}
-  100% {transform: translateX(-40px); opacity: 1; visibility: hidden}
+  0% {transform: translateX(40px); opacity: 0; visibility: hidden}
+  10% {transform: translateX(0px); opacity: 1; visibility: visible}
+  95% {transform: translateX(0px); opacity: 1; visibility: visible}
+  100% {transform: translateX(-40px); opacity: 0; visibility: hidden}
 }
 
 @keyframes fadeOutThenIn {
@@ -860,9 +860,7 @@ color: #393d40
   margin-top: 10px;
 }
 
-.testimonialCarouselCard {
 
-}
 
 #contactButton:hover {
   background: #FFCE4C;

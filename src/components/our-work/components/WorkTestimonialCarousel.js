@@ -31,6 +31,7 @@ class WorkTestimonialCarousel extends React.Component {
           this.setState({
             text: testimonials[this.state.count].text,
             author: testimonials[this.state.count].author,
+            slideFade: 'fadeInRightThenOutLeft 7s forwards',
             count: this.state.count + 1
           })
         }
@@ -38,6 +39,7 @@ class WorkTestimonialCarousel extends React.Component {
           this.setState({
             text: testimonials[this.state.count].text,
             author: testimonials[this.state.count].author,
+            slideFade: 'fadeInRightThenOutLeftToggle 7s forwards',
             count: this.state.count + 1
           })
         }
