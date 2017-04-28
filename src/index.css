@@ -257,11 +257,13 @@ video#bgvid {
 /* CAROUSEL STYLING */
 
 #workTestimonialCarouselContainer {
+  background: #777;
   display: flex;
   align-items: center
 }
 
 #workTestimonialCarouselContainer .workTestimonialPhoto {
+  margin: 0 auto;
   background: #777;
   height: 350px;
 }

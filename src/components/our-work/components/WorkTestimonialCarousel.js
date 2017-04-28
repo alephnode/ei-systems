@@ -24,7 +24,7 @@ class WorkTestimonialCarousel extends React.Component {
 
   _updateSlider() {
 
-      if(this.state.count === testimonials.length - 1)
+      if(this.state.count === testimonials.length)
         this.state.count = 0
 
         if(this.state.count % 2 === 0) {
