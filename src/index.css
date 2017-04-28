@@ -256,6 +256,11 @@ video#bgvid {
 
 /* CAROUSEL STYLING */
 
+#workTestimonialCarouselContainer {
+  display: flex;
+  align-items: center
+}
+
 #workTestimonialCarouselContainer .workTestimonialPhoto {
   background: #777;
   height: 350px;
@@ -468,6 +473,20 @@ border-bottom: 3px solid #FFB900;
 @keyframes fadeOut {
   0% {opacity: 1; visibility: visible}
   100% {opacity: 0; visibility: hidden}
+}
+
+@keyframes fadeInRightThenOutLeft {
+  0% {transform: translateX(40px); opacity: 1; visibility: hidden}
+  10% {transform: translateX(0px); opacity: 0; visibility: visible}
+  92% {transform: translateX(0px); opacity: 0; visibility: visible}
+  100% {transform: translateX(-40px); opacity: 1; visibility: hidden}
+}
+
+@keyframes fadeInRightThenOutLeftToggle {
+  0% {transform: translateX(40px); opacity: 1; visibility: hidden}
+  10% {transform: translateX(0px); opacity: 0; visibility: visible}
+  92% {transform: translateX(0px); opacity: 0; visibility: visible}
+  100% {transform: translateX(-40px); opacity: 1; visibility: hidden}
 }
 
 @keyframes fadeOutThenIn {
@@ -841,6 +860,10 @@ color: #393d40
   margin-top: 10px;
 }
 
+.testimonialCarouselCard {
+
+}
+
 #contactButton:hover {
   background: #FFCE4C;
   border: 1px solid #FFCE4C
@@ -1136,7 +1159,7 @@ a, a:hover, a:active, a:visited {
   }
 
   .testimonialCarouselCard {
-    width: 80%
+    width: 80%;
   }
 
   .testimonialLede {
@@ -1154,21 +1177,6 @@ a, a:hover, a:active, a:visited {
     width: 100%;
     font-size: 16px
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   #homeWorkContainer {
     padding: 50px 0px;
