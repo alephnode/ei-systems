@@ -167,7 +167,8 @@ video#bgvid {
 #contactFormContainer {
   display: block;
   width: 100%;
-  margin-top: -15px
+  margin-top: -15px;
+  margin-bottom: 60px
 }
 
 .contactFormSection {
@@ -497,6 +498,22 @@ border-bottom: 3px solid #FFB900;
   100% {transform: translateX(0px); opacity: 0; visibility: hidden}
 }
 
+@keyframes fadeInDownThenOut {
+  0% {transform: translateY(0px); opacity: 0; visibility: hidden}
+  10% {transform: translateY(50px); opacity: 1; visibility: visible}
+  88% {transform: translateY(50px); opacity: 1; visibility: visible}
+  95% {transform: translateY(0px); opacity: 0; visibility: hidden}
+  100% {transform: translateY(0px); opacity: 0; visibility: hidden}
+}
+
+@keyframes fadeInDownThenOutToggle {
+  0% {transform: translateY(0px); opacity: 0; visibility: hidden}
+  10% {transform: translateY(50px); opacity: 1; visibility: visible}
+  88% {transform: translateY(50px); opacity: 1; visibility: visible}
+  95% {transform: translateY(0px); opacity: 0; visibility: hidden}
+  100% {transform: translateY(0px); opacity: 0; visibility: hidden}
+}
+
 @keyframes moveLeftThenRight {
   0% {transform: translateX(0px);}
   10% {transform: translateX(-50px);}
@@ -516,6 +533,19 @@ border-bottom: 3px solid #FFB900;
   100% {opacity: 1; visibility: visible}
 }
 
+@keyframes moveUpThenDown {
+  0% {transform: translateY(0px)}
+  10% {transform: translateY(-30px)}
+  90% {transform: translateY(-30px)}
+  100% {transform: translateY(0px)}
+}
+
+@keyframes moveUpThenDownToggle {
+  0% {transform: translateY(0px)}
+  10% {transform: translateY(-30px)}
+  90% {transform: translateY(-30px)}
+  100% {transform: translateY(0px)}
+}
 
 
 @keyframes slideUp {
@@ -563,7 +593,7 @@ color: #393d40
   color: white
 }
 
-.workBlurb, .teamBlurb, .contactBlurb, .instaBlurb, .contactFormMapBlurb, .testimonialBlurb, .testimonial, .contactTopBlurb  {
+.workBlurb, .teamBlurb, .contactBlurb, .instaBlurb, .contactFormMapBlurb, .testimonialBlurb, .testimonial, .contactTopBlurb, .partnersMobileBlurb  {
   text-align: left;
   font-family: 'Muli', sans-serif;
   font-weight: 200;
@@ -741,6 +771,14 @@ color: #393d40
   margin-top: 40px
 }
 
+.rtiLogoMobile {
+  margin-top: 90px
+}
+
+.bssMobile {
+  margin-top: -70px
+}
+
 .crestronLogo, .lutronLogo {
   margin-top: -30px;
 }
@@ -886,9 +924,22 @@ a, a:hover, a:active, a:visited {
     text-decoration:none!important;
 }
 
-.partnersContainer h2, .homeContactLede h2, .workTestimonialLede  {
+.partnersContainer h2, .homeContactLede h2, .workTestimonialLede, .partnersMobileContainer  {
   font-family: 'Muli', sans-serif;
   font-weight: 400;
+}
+
+.mobileLogos {
+  margin-top: 40px
+}
+
+.partnersMobileContainer h2 {
+  width: 100%;
+  margin-bottom: 20px
+}
+
+.partnersMobileContainer {
+  margin-top: 20px
 }
 
 .instaTitleContainer {
@@ -1014,6 +1065,71 @@ a, a:hover, a:active, a:visited {
 
 @media screen and (max-width: 767px) {
 
+  .topMobileImagesContainer {
+    margin-top: -350px;
+    visibility: hidden
+  }
+
+  .homePartnersButton {
+    margin-top: 30px
+  }
+
+  .mobileKaleidescapeLogo {
+    margin-top: 30px
+  }
+
+  .mobileBbbLogo {
+    margin-top: 45px
+  }
+
+  .partnersMobileBlurb {
+    margin-bottom: 80px
+  }
+
+  .teamBlurb h2, .aboutBlurb {
+    text-align: center
+  }
+
+  .workBlurbGraph p {
+    margin-top: 20px;
+    margin-bottom: 20px
+  }
+
+  .homeWorkButton {
+    margin-bottom: 20px;
+  }
+
+  .workBlurb h2 {
+    margin-top: 20px
+  }
+
+  #homePartnersContainer {
+    padding-top: 20px;
+  }
+
+.promiseText  {
+  width: 90%;
+  margin: 10px auto 60px auto
+}
+
+.promiseText p:last-child {
+  margin-bottom: 30px
+}
+
+  .promiseOne, .promiseTwo, .promiseThree, .promiseFour {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 150px;
+    margin: 20px auto 5px auto;
+  }
+
+  .promiseOne i, .promiseTwo i, .promiseThree i, .promiseFour i {
+    line-height: 150px;
+    color: #666;
+    font-size: 50px
+  }
+
   .testimonial {
     font-size: 16px;
     width: 100%;
@@ -1084,7 +1200,7 @@ a, a:hover, a:active, a:visited {
     width: 100%
   }
 
-  .instaBlurb, .workBlurb p, .partnersBlurb, .aboutBlurb, .contactBlurb p {
+  .instaBlurb, .workBlurb p, .partnersBlurb, .aboutBlurb, .contactBlurb p, .partnersMobileBlurb {
     font-size: 16px;
   }
 

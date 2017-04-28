@@ -7,6 +7,9 @@ class HomePartnersContainer extends React.Component {
     super();
     this.state = {
       animationToggle: 0,
+      mobileFadeIn: '',
+      mobileMoveUp: '',
+      animationMobileToggle: 0,
       textTransform: '',
       imgTransform: '',
       moreImgTransform: '',
@@ -14,6 +17,7 @@ class HomePartnersContainer extends React.Component {
     }
     this._handlePartnersWaypointEnter = this._handlePartnersWaypointEnter.bind(this)
     this._handlePartnersSeeMoreClick = this._handlePartnersSeeMoreClick.bind(this)
+    this._handlePartnersSeeMoreMobileClick = this._handlePartnersSeeMoreMobileClick.bind(this)
   }
 
   _handlePartnersWaypointEnter() {
@@ -42,8 +46,23 @@ class HomePartnersContainer extends React.Component {
       imgTransform: 'moveLeftThenRightToggle 5s forwards',
       moreImgTransform: 'fadeInLeftThenOutToggle 5s forwards'
     });
+  }
 
-    console.log(this.state.animationToggle)
+  _handlePartnersSeeMoreMobileClick() {
+    (this.state.animationMobileToggle % 2 == 0) ?
+    this.setState({
+      animationMobileToggle: this.state.animationMobileToggle+1,
+      textTransform: 'fadeOutThenIn 5s forwards',
+      mobileMoveUp: 'moveUpThenDown 5s forwards',
+      mobileFadeIn: 'fadeInDownThenOut 5s forwards'
+    }) :
+    this.setState({
+      animationMobileToggle: this.state.animationMobileToggle+1,
+      textTransform: 'fadeOutThenInToggle 5s forwards',
+      mobileMoveUp: 'moveUpThenDownToggle 5s forwards',
+      mobileFadeIn: 'fadeInDownThenOutToggle 5s forwards'
+    });
+    console.log('les go')
   }
 
   render() {
@@ -118,11 +137,39 @@ class HomePartnersContainer extends React.Component {
           <div className="container">
             <div className="homePartnersMobileContent">
               <div className="partnersMobileContainer">
-                <div className="col-xs-12">
+                <div className="col-xs-12"  style={{animation: this.state.textTransform}}>
                   <h2>Our Partners</h2>
                 </div>
-                <div className="col-xs-10 col-xs-offset-1">
-                  <p className="partnersMobileBlurb">With partnerships with top industry leaders, your installation will be the highest tier of quality with the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreClick} className="btn btn-lg homePartnersButton">See More</button></p>
+                <div className="col-xs-12"  style={{animation: this.state.textTransform}}>
+                  <p className="partnersMobileBlurb">With partnerships with top industry leaders, your installation will be the highest tier of quality with the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreMobileClick} className="btn btn-lg homePartnersButton">See More</button></p>
+                </div>
+                <div className="topMobileImagesContainer col-xs-12" style={{animation: this.state.mobileFadeIn}}>
+                  <div className="col-xs-6">
+                    <img className="img-responsive originLogoMobile" alt="Origin logo" src={require('../../../images/origin-acoustics.png')} />
+                  </div>
+                  <div className="col-xs-6">
+                    <img className="img-responsive triadLogoMobile" alt="Triad logo" src={require('../../../images/Triad-logo.png')} />
+                  </div>
+                  <div className="col-xs-6">
+                    <img className="img-responsive rtiLogoMobile" alt="RTI logo" src={require('../../../images/rtilogo.png')} />
+                  </div>
+                  <div className="col-xs-6">
+                    <img className="img-responsive bssMobile" alt="BSS logo" src={require('../../../images/bss_logo.png')} />
+                  </div>
+                </div>
+                <div className="bottomMobileImagesContainer col-xs-12" style={{animation: this.state.mobileMoveUp}}>
+                  <div className="col-xs-6">
+                    <img className="img-responsive mobileCrestronLogo" alt="crestron logo" src={require('../../../images/crestron-logo-dark.png')} />
+                  </div>
+                  <div className="col-xs-6">
+                    <img className="img-responsive mobileLutronLogo" alt="Lutron logo" src={require('../../../images/lutron_logo.png')} />
+                  </div>
+                  <div className="col-xs-6">
+                    <img className="img-responsive mobileKaleidescapeLogo" alt="Kaleidescape logo" src={require('../../../images/Kaleidescape-Logo.png')} />
+                  </div>
+                  <div className="col-xs-6">
+                    <img className="img-responsive mobileBbbLogo" alt="BBB logo" src={require('../../../images/bbb-Logo.png')} />
+                  </div>
                 </div>
               </div>
             </div>

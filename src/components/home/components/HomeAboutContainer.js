@@ -45,29 +45,23 @@ class HomeAboutContainer extends React.Component {
             </div>
           </div>
           <div className="row">
-          <div className="col-md-3 promiseContainer text-center" style={{...styles, animation: this.state.transform1}}>
+          <div className="col-md-4 promiseContainer text-center" style={{...styles, animation: this.state.transform1}}>
             <div className="promiseOne text-center"><i className="glyphicon glyphicon-fire"></i></div>
             <div className="clearfix"></div>
-            <h4 className="promiseText text-center">Timeliness</h4>
-            <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
+            <h4 className="promiseText text-center">Integrity</h4>
+            <p className="promiseText">We stand behind every product and installation we provide. From monitor displays to fully immersive systems, you can count on us.</p>
           </div>
-          <div className="col-md-3 promiseContainer center" style={{...styles, animation: this.state.transform2}}>
-            <div className="promiseTwo"><i className="glyphicon glyphicon-hdd"></i></div>
+          <div className="col-md-4 promiseContainer center" style={{...styles, animation: this.state.transform2}}>
+            <div className="promiseTwo"><i className="glyphicon glyphicon-calendar"></i></div>
               <div className="clearfix"></div>
-              <h4 className="promiseText text-center">Follow-Through</h4>
-              <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
+              <h4 className="promiseText text-center">Timeliness</h4>
+              <p className="promiseText">At Exceptional Integrations, we offer detailed timelines and updates for every project we take on.</p>
           </div>
-          <div className="col-md-3 promiseContainer center" style={{...styles, animation: this.state.transform3}}>
-            <div className="promiseThree"><i className="glyphicon glyphicon-briefcase"></i></div>
+          <div className="col-md-4 promiseContainer center" style={{...styles, animation: this.state.transform3}}>
+            <div className="promiseThree"><i className="glyphicon glyphicon-ok"></i></div>
               <div className="clearfix"></div>
-              <h4 className="promiseText text-center">Ease-of-use</h4>
-              <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
-          </div>
-          <div className="col-md-3 promiseContainer center" style={{...styles, animation: this.state.transform4}}>
-            <div className="promiseFour"><i className="glyphicon glyphicon-floppy-disk"></i></div>
-              <div className="clearfix"></div>
-              <h4 className="promiseText text-center">Maintainable</h4>
-              <p className="promiseText">Praesent vestibulum cursus metus, eu maximus quam. Fusce vehicula a ligula vitae luctus. Suspendisse finibus nulla ut nisl suscipit, nec pellentesque ex dignissim. </p>
+              <h4 className="promiseText text-center">Simplicity</h4>
+              <p className="promiseText">All software, switch work, or other installs are configured and detailed for our clients by trained technicians before we're finished.</p>
           </div>
           { width > 768  ? (
             <Waypoint onEnter={this._handleWaypointEnter} scrollableAncestor={window} />
