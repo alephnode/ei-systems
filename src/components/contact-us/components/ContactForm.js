@@ -40,7 +40,7 @@ class ContactForm extends React.Component {
           <p className="text-left">Las Vegas, NV 89120</p>
           <p className="text-left"><i className="glyphicon glyphicon-earphone"></i>  702.749.7700 |
           702.749.7701 (fax)</p>
-        <p className="text-left"><i className="glyphicon glyphicon-envelope"></i> <a href="mailto:info@exceptionalintegrations.com" target="_top">info@exceptionalintegrations.com</a></p>
+        <p className="text-left"><i className="glyphicon glyphicon-envelope"></i> <a href="mailto:info@eisystems.co" target="_top">info@eisystems.co</a></p>
         </div>
       </div>
       <div className="col-md-6 formWork col-md-offset-1">

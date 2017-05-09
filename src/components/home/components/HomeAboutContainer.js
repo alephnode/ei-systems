@@ -46,22 +46,22 @@ class HomeAboutContainer extends React.Component {
           </div>
           <div className="row">
           <div className="col-md-4 promiseContainer text-center" style={{...styles, animation: this.state.transform1}}>
-            <div className="promiseOne text-center"><i className="glyphicon glyphicon-fire"></i></div>
+            <div className="promiseOne text-center"><i className="glyphicon glyphicon-lock"></i></div>
             <div className="clearfix"></div>
             <h4 className="promiseText text-center">Integrity</h4>
-            <p className="promiseText">We stand behind every product and installation we provide. From monitor displays to fully immersive systems, you can count on us.</p>
+            <p className="promiseText">There are no surprises with us. Your system will be unique and specific to all your needs and when we are finished you own all the documentation and source code for what we have built.</p>
           </div>
           <div className="col-md-4 promiseContainer center" style={{...styles, animation: this.state.transform2}}>
             <div className="promiseTwo"><i className="glyphicon glyphicon-calendar"></i></div>
               <div className="clearfix"></div>
               <h4 className="promiseText text-center">Timeliness</h4>
-              <p className="promiseText">At Exceptional Integrations, we offer detailed timelines and updates for every project we take on.</p>
+              <p className="promiseText">Your time matters to us. We focus on the highest industry standards and employ certified technicians that understand every aspect of an integrated system, getting the job done right the first time.</p>
           </div>
           <div className="col-md-4 promiseContainer center" style={{...styles, animation: this.state.transform3}}>
             <div className="promiseThree"><i className="glyphicon glyphicon-ok"></i></div>
               <div className="clearfix"></div>
               <h4 className="promiseText text-center">Simplicity</h4>
-              <p className="promiseText">All software, switch work, or other installs are configured and detailed for our clients by trained technicians before we're finished.</p>
+              <p className="promiseText">Our systems are built to make the complex easy. We handle all your needs under one roof so that everything runs smoothly and engineer detailed systems that are built to take on the future.</p>
           </div>
           { width > 768  ? (
             <Waypoint onEnter={this._handleWaypointEnter} scrollableAncestor={window} />

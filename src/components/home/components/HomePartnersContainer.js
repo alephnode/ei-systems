@@ -77,7 +77,7 @@ class HomePartnersContainer extends React.Component {
                   <h2>Our Partners</h2>
                 </div>
                 <div className="col-md-5">
-                  <p className="partnersBlurb">With partnerships with top industry leaders, your installation will be the highest tier of quality with the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreClick} className="btn btn-lg homePartnersButton">See More</button></p>
+                  <p className="partnersBlurb">Through partnerships with top industry leaders, we ensure your installation will be the highest tier of quality comprised of the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreClick} className="btn btn-lg homePartnersButton">See More</button></p>
                 </div>
               </div>
           <div className="partnerLogos col-md-5" style={{animation: this.state.imgTransform}}>
