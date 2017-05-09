@@ -141,7 +141,7 @@ class HomePartnersContainer extends React.Component {
                   <h2>Our Partners</h2>
                 </div>
                 <div className="col-xs-12"  style={{animation: this.state.textTransform}}>
-                  <p className="partnersMobileBlurb">With partnerships with top industry leaders, your installation will be the highest tier of quality with the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreMobileClick} className="btn btn-lg homePartnersButton">See More</button></p>
+                  <p className="partnersMobileBlurb">Through partnerships with top industry leaders, we ensure your installation will be the highest tier of quality comprised of the most recent trends in technology.<br/><button onClick={this._handlePartnersSeeMoreMobileClick} className="btn btn-lg homePartnersButton">See More</button></p>
                 </div>
                 <div className="topMobileImagesContainer col-xs-12" style={{animation: this.state.mobileFadeIn}}>
                   <div className="col-xs-6">
