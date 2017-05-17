@@ -10,7 +10,6 @@ class ContactForm extends React.Component {
                   message: ''};
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -18,11 +17,6 @@ class ContactForm extends React.Component {
                    lastName: event.target.value,
                    email: event.target.value,
                    message: event.target.value});
-  }
-
-  handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.firstName);
-    event.preventDefault();
   }
 
   render() {
@@ -44,12 +38,12 @@ class ContactForm extends React.Component {
         </div>
       </div>
       <div className="col-md-6 formWork col-md-offset-1">
-      <form onSubmit={this.handleSubmit}>
+      <form enctype="text/plain" method="GET" action="mailto:info@eisystems.co">
         <div className="form-group">
         <label className="pull-left">
           First Name:
         </label>
-          <input type="text" ref="firstName" className="form-control contactFormInput" defaultValue={this.props.firstName} onChange={this.handleChange} />
+          <input type="text" ref="firstName" className="form-control contactFormInput" name="subject" defaultValue={this.props.firstName} onChange={this.handleChange} />
         </div>
         <div className="form-group">
         <label className="pull-left">
@@ -67,7 +61,7 @@ class ContactForm extends React.Component {
         <label className="pull-left">
           Message:
         </label>
-          <textarea type="text" ref="message" className="form-control contactFormInput" defaultValue={this.props.message} onChange={this.handleChange}></textarea>
+          <textarea type="text" ref="message" className="form-control contactFormInput" name="body"></textarea>
         </div>
         <br/>
         <button type="submit" className="btn btn-lg pull-right" id="contactButton" value="Submit">Send</button>
