@@ -38,7 +38,7 @@ class ContactForm extends React.Component {
         </div>
       </div>
       <div className="col-md-6 formWork col-md-offset-1">
-      <form enctype="text/plain" method="GET" action="mailto:info@eisystems.co">
+      <form encType="text/plain" method="GET" action="mailto:info@eisystems.co">
         <div className="form-group">
         <label className="pull-left">
           First Name:
