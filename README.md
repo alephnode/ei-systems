@@ -1,2 +1,3 @@
-#EI Systems
-This is the website repo for Exceptional Integrations.
+# EI Systems
+This is the website repository for Exceptional Integrations.
+
