@@ -32,7 +32,7 @@ class ContactFormMap extends React.Component {
           width="100%"
           height="360"
           frameBorder="0" style={{...contactMapStyles, pointerEvents: this.state.pointerEvents }}
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPkJehHyxkKlfSQVB5oXw2btwvLrt-S9w&q=6340+South+Sandhill+Road+Suite+5,Las+Vegas+NV" allowFullScreen>
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCPkJehHyxkKlfSQVB5oXw2btwvLrt-S9w&q=6280+South+Valley+View+Boulevard+Suite+238,Las+Vegas+NV" allowFullScreen>
           </iframe>
         </div>
       );
